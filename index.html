@@ -9,57 +9,66 @@
     <title>Luka Blašković</title>
 </head>
 
-<body class="bg-gray-800 font-mono">
+<body class="bg-gray-200 font-mono ">
 
-    <div class="bg-gray-700 grid grid-flow-col">
-        <nav class="flex items-center justify-between flex-wrap bg-teal-500 p-6">
+    <div class="bg-gray-800 grid grid-flow-col">
+        <nav class="flex flex-wrap bg-teal-500 p-1">
             <div class="flex items-center flex-shrink-0 text-white mr-6">
-              <img class="w-1/4" src="businessman.png" alt="">
-              <span class="font-semibold text-xl tracking-tight">Luka Blašković</span>
-            </div>
-            <div class="block lg:hidden">
-              <button class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
-                <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
-              </button>
+              <img class="w-1/4" src="businessman.png" alt="businessman icon">
+              <span class="font-semibold text-2xl tracking-tight">Luka Blašković</span>
             </div>
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
               <div class="text-sm lg:flex-grow">
-
-                <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
-                  O meni
-                </a>
-                
               </div>
-              <div>
-                <!--<a href="https://github.com/lukablaskovic" class="inline-block text-sm px-4 py-2 leading-none  hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"><img class=" ..." src="github_logo.png" alt=""></a>-->
-              </div>
+                <a href="https://github.com/lukablaskovic" class="inline-block leading-none lg:mt-0"><img class="hover:border-transparent hover:bg-white w-1/2" src="github_logo.png" alt=""></a>
+                <a href="https://www.facebook.com/blaskec/" class="inline-block leading-none lg:mt-0"><img class="hover:border-transparent hover:bg-white w-1/2" src="facebook_logo.png" alt=""></a>
             </div>
           </nav>
     </div>
-    <div class="grid grid-cols-2 grid-flow-col">
+
+    <main class="grid grid-cols-3 grid-flow-col flex-grow">
 
         <div class="... bg-green-800">
             <h1 class="text-6xl text-center font-bold text-gray-50">POZDRAV!</h1>
-            <h2 class="text-4xl text-center font-bold text-gray-50">Malo o meni</h2>
+            <h2 class="text-4xl text-center font-bold text-gray-800">Malo o meni</h2>
             <hr>
             <br>
-            <div class="ml-2">
-                <h4 class="text-2xl font-medium  text-gray-50">Student sam 3. godine informatike u Puli.</h4>
+            <div class="ml-2 text-center">
+                <h4 class="text-2xl text-gray-50">Student sam 3. godine informatike u Puli.</h4>
                 <br>
-                <h6 class="text-1xl font-medium  text-gray-50">Rođen u Puli, imam 21. godinu. Završio sam Opću Gimnaziju</h6>
-                
-                <h6 class="text-1xl font-medium  text-gray-50">U slobodno vrijeme bavim se izradom video igara u Unity-u</h6>
-                <h6 class="text-1xl font-medium  text-gray-50">Također, sviram električnu gitaru u jednom rock bendu</h6>
+                <h6 class="text-1xl text-gray-50">Rođen u Puli, imam 21. godinu. Završio sam Opću Gimnaziju.</h6>
+                <h6 class="text-1xl text-gray-50">U slobodno vrijeme bavim se izradom video igara u Unity-u.</h6>
+                <h6 class="text-1xl text-gray-50">Također, sviram električnu gitaru u jednom rock bendu.</h6>
             </div>
             <br>
-
         </div>
 
-        <div class="... col-span-4">
-            <img class="w-1/2" src="profile_picture.png" alt="Profilna slika - Luka Blašković">
+        <div class="col-span-2 bg-gray-600">
+            <img class="h-72 w-full object-cover" src="profile_picture.png" alt="Profilna slika - Luka Blašković">
         </div>
         
-        
+    </main>
+
+    <div class="grid grid-cols-3 flex-grow justify-items-center m-16">
+
+
+        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+            <h4 class="text-2xl text-gray-50">Jezici koje poznajem: C++, C#, Python, Javascript</h4>
+        </div>
+
+
+        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+            <h4 class="text-2xl text-gray-50">Izrađujem video igre u Unity okruženju</h4>
+        </div>
+ 
+
+        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+            <h4 class="text-2xl text-gray-50">3 godine iskustva</h4>
+        </div>
+
+    </div>
+    <div class="flex flex-col">
+        <footer class="p-4 bg-gray-300 text-center ">@2021 Luka Blašković</footer>
     </div>
     
 </body>
