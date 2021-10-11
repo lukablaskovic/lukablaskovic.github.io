@@ -1,5 +1,5 @@
 # Repozitorij moje osobne web stranice
 
-Ovdje će se nalaziti HTML/CSS, možda i Javascript koji čini moju osobnu web stranicu.
+Ovdje će se link na moju osobnu web stranicu koju sam imao kao zadatak za izraditi iz kolegija Programsko inženjerstvo na FIPU.
 
 Adresa web stranice je https://lukablaskovic.github.io
