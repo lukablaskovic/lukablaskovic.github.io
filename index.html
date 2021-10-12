@@ -6,8 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <title>Luka Blašković</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <title>Luka Blašković</title>
 </head>
 
 <body class="bg-gray-200 font-mono ">
@@ -21,15 +23,15 @@
             <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
               <div class="text-sm lg:flex-grow">
               </div>
-                <a href="https://github.com/lukablaskovic" target="_blank" class="inline-block leading-none lg:mt-0"><img class="hover:bg-gray-100 transform motion-safe:hover:scale-110 w-12 m-2" src="github_logo.png" alt=""></a>
-                <a href="https://www.facebook.com/blaskec/" target="_blank" class="inline-block leading-none lg:mt-0"><img class="transform motion-safe:hover:scale-110 w-12 m-2" src="facebook_logo.png" alt=""></a>
+                <a href="https://github.com/lukablaskovic" target="_blank" class="inline-block leading-none lg:mt-0"><img class="zoom transform motion-safe:hover:scale-110 w-12 m-2" src="github_logo.png" alt=""></a>
+                <a href="https://www.facebook.com/blaskec/" target="_blank" class="inline-block leading-none lg:mt-0"><img class="zoom transform motion-safe:hover:scale-110 w-12 m-2" src="facebook_logo.png" alt=""></a>
             </div>
           </nav>
     </div>
 
-    <main class="grid grid-cols-3 grid-flow-col flex-grow">
+    <main class="grid-flow-row sm:grid-flow-col grid xl:grid-cols-3 xl:grid-flow-col ">
 
-        <div class="... bg-green-800">
+        <div class=" bg-green-800">
             <h1 class="text-6xl text-center font-bold text-gray-50">POZDRAV!</h1>
             <h2 class="text-4xl text-center font-bold text-gray-800">Evo tko sam i čime se bavim</h2>
             <hr>
@@ -44,24 +46,24 @@
             <br>
         </div>
 
-        <div class="col-span-2 bg-gray-600">
-            <img class="h-72 w-full object-cover" src="profile_picture.png" alt="Profilna slika - Luka Blašković">
+        <div class="row-span-1 xl:col-span-2 bg-gray-600 ">
+            <img class="object-cover sm:h-full xl:h-72 w-full object-cover" src="profile_picture.png" alt="Profilna slika - Luka Blašković">
         </div>
         
     </main>
 
     <div class="grid grid-cols-3 flex-grow justify-items-center m-16">
 
-        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+        <div class="rounded-full xl:h-64 xl:w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center zoom">
             <h4 class="text-2xl text-gray-50"><b>Programski jezici</b> koje poznajem: C++, C#, Python, Javascript i SQL</h4>
         </div>
 
-        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+        <div class="rounded-full xl:h-64 xl:w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center zoom">
             <h4 class="text-2xl text-gray-50"><a href="https://www.youtube.com/watch?v=DhfsrFUEWZk" target="_blank">Izrađujem video igre u <b>Unity</b> okruženju</a></h4>
         </div>
  
 
-        <div class="rounded-full h-64 w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center">
+        <div class="rounded-full xl:h-64 xl:w-64 bg-yellow-500 rounded-full flex items-center justify-center text-center zoom">
             <h4 class="text-3xl text-gray-50">4 godine iskustva</h4>
         </div>
 
