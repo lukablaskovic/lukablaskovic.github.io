@@ -16,3 +16,6 @@ form {
 textarea {
   resize: none;
 }
+#alertPrompt {
+  display: none;
+}
