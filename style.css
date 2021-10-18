@@ -10,3 +10,6 @@ body {
 .zoom:hover {
   transform: scale(1.25);
 }
+form {
+  display: inline-block;
+}
