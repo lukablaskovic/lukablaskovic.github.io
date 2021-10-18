@@ -13,3 +13,6 @@ body {
 form {
   display: inline-block;
 }
+textarea {
+  resize: none;
+}
