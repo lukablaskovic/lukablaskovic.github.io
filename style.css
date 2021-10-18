@@ -1,4 +1,9 @@
+html,
 body {
+  overflow-x: hidden;
+}
+body {
+  position: relative;
   background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
