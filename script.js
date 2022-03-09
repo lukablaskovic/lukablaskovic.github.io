@@ -1,4 +1,4 @@
-function contactMe(params) {
+function contactMe() {
   let contactName = document.getElementById("fullName").value;
   let email = document.getElementById("email").value;
   let inquiry = document.getElementById("inquiry").value;
