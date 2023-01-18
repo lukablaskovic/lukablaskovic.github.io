@@ -11,10 +11,10 @@
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
         <img
           src="../assets/work/eurolim.hr.png"
-          class="w-full bg-nav h-36 lg:h-72 object-cover" />
+          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
         <img
           src="../assets/work/skamp.hr.png"
-          class="w-full bg-nav h-36 lg:h-72 object-cover" />
+          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
         <img
           src="../assets/work/istramusicshop.png"
           class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />

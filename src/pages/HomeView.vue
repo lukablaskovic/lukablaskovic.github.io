@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      class="container mt-8 md:mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
       <div class="flex flex-wrap md:flex-nowrap">
         <!--Dot nav-->
         <nav class="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
@@ -34,12 +34,27 @@
           <!--/Dot nav-->
         </nav>
         <div
-          class="flex flex-wrap lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my36">
+          class="flex flex-col lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my36">
           <h1
-            class="font-bold text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
-            Building<br />beautiful web experiences
+            class="font-bold text-selected-text text-xl md:text-xl lg:text-2xl text-center md:text-left">
+            Full Stack Developer<br />
           </h1>
-          <a href="#hire-me"
+          <h2 class="text-4xl md:text-4xl lg:text-6xl text-center md:text-left">
+            Luka<br />
+            Blašković
+          </h2>
+          <h3 class="mt-4 text-center md:text-left">
+            I am Full stack developer and IT enthusiast based in Croatia.
+          </h3>
+          <h3 class="text-center md:text-left">
+            Currently, I am studying towards a master's degree of Informatics,
+            at Juraj Dobrila University of Pula - Croatia.
+          </h3>
+          <h3 class="text-center md:text-left">
+            I am passionate about building excellent software that improves the
+            lives of those around me.
+          </h3>
+          <a href="#hire-me" class="text-center md:text-left"
             ><button class="px-6 mt-12 py-2 bg-theme">My work</button></a
           >
         </div>
