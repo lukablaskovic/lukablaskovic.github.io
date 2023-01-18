@@ -1,4 +1,4 @@
-<template lang="">
+<template>
   <div>
     <div
       class="container mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
@@ -43,13 +43,27 @@
             ><button class="px-6 mt-12 py-2 bg-theme">My work</button></a
           >
         </div>
+        <img
+          class="rounded-full mx-auto mt-6 w-4/5 md:w-2/4 md:mt-0 -z-1"
+          src="../assets/lukablaskovic-profile.jpg"
+          alt="Luka Blašković profile image" />
       </div>
     </div>
+
+    <WorkGallery></WorkGallery>
+
+    <HireMe></HireMe>
   </div>
 </template>
 <script>
+import WorkGallery from "../components/WorkGallery.vue";
+import HireMe from "../components/HireMe.vue";
 export default {
   name: "home-view",
+  components: {
+    WorkGallery,
+    HireMe,
+  },
 };
 </script>
 <style lang=""></style>
