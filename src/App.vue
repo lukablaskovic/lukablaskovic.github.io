@@ -11,8 +11,12 @@
         <div class="hidden md:flex space-x-12 items-center">
           <a href="#" class="text-selected-text">Home</a>
           <a href="#work">My work</a>
-          <a href="#hire-me"
-            ><button class="px-6 py-2 bg-theme">Hire me</button></a
+          <a href="#publications">Publications</a>
+          <a href="#hire"
+            ><button
+              class="px-6 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
+              Hire me
+            </button></a
           >
         </div>
         <div class="md:hidden"><i class="fa-solid fa-bars"></i></div>

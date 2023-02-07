@@ -5,13 +5,15 @@
       <h2 id="work" class="secondary-title">My work</h2>
       <p class="section-paragraph">
         I’ve had the pleasure of working on various projects, designing and
-        implementing both frontend and backend.
+        implementing both frontend and backend solutions.
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <img
-          src="../assets/work/eurolim.hr.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
+        <a href="">
+          <img
+            src="../assets/work/launcher.png"
+            class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
+        </a>
         <img
           src="../assets/work/skamp.hr.png"
           class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />

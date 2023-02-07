@@ -9,7 +9,11 @@
             class="absolute left-50 transform -translate-x-1/2 space-y-6 mt-36">
             <a
               href="#"
-              class="nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              :class="
+                scrollPosition < 900
+                  ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
+                  : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
+              ">
               <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0"
                 >Home</span
               ></a
@@ -17,7 +21,11 @@
 
             <a
               href="#"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              :class="
+                scrollPosition >= 900 && scrollPosition < 1900
+                  ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
+                  : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
+              ">
               <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0"
                 >Work</span
               ></a
@@ -25,7 +33,23 @@
 
             <a
               href="#"
-              class="nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body">
+              :class="
+                scrollPosition >= 1900 && scrollPosition < 2200
+                  ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
+                  : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
+              ">
+              <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0"
+                >Publications</span
+              ></a
+            >
+
+            <a
+              href="#"
+              :class="
+                scrollPosition >= 2200
+                  ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
+                  : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
+              ">
               <span class="bg-black px-2 py-1 rounded-md ml-10 opacity-0"
                 >Hire</span
               ></a
@@ -44,17 +68,17 @@
             Blašković
           </h2>
           <h3 class="mt-4 text-center md:text-left">
-            I am Full stack developer and IT enthusiast based in Croatia.
+            I am a Full stack developer and IT enthusiast based in Croatia.
           </h3>
           <h3 class="text-center md:text-left">
-            Currently, I am studying towards a master's degree of Informatics,
+            Currently, I am studying towards a master's degree in Informatics,
             at Juraj Dobrila University of Pula - Croatia.
           </h3>
           <h3 class="text-center md:text-left">
             I am passionate about building excellent software that improves the
             lives of those around me.
           </h3>
-          <a href="#hire-me" class="text-center md:text-left"
+          <a href="#work" class="text-center md:text-left"
             ><button class="px-6 mt-12 py-2 bg-theme">My work</button></a
           >
         </div>
@@ -66,18 +90,35 @@
     </div>
 
     <WorkGallery></WorkGallery>
-
+    <Publications></Publications>
     <HireMe></HireMe>
   </div>
 </template>
 <script>
 import WorkGallery from "../components/WorkGallery.vue";
 import HireMe from "../components/HireMe.vue";
+import Publications from "../components/Publications.vue";
 export default {
   name: "home-view",
   components: {
     WorkGallery,
+    Publications,
     HireMe,
+  },
+  data() {
+    return {
+      scrollPosition: 0,
+    };
+  },
+  created() {
+    window.addEventListener("scroll", this.handleScroll);
+    console.log(process.env.VUE_APP_ALRIGHT);
+  },
+  methods: {
+    handleScroll() {
+      console.log(window.scrollY);
+      this.scrollPosition = window.scrollY;
+    },
   },
 };
 </script>
