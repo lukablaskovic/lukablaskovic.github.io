@@ -9,33 +9,65 @@
       </p>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-        <a href="">
+        <a
+          :href="item.webSRC"
+          target="_blank"
+          v-for="item in portfolio"
+          :key="item.title">
           <img
-            src="../assets/work/launcher.png"
+            :src="item.imgSRC"
             class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
         </a>
-        <img
-          src="../assets/work/skamp.hr.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
-        <img
-          src="../assets/work/istramusicshop.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
-        <img
-          src="../assets/work/macroquiet.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
-        <img
-          src="../assets/work/apartment-luka.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
-        <img
-          src="../assets/work/student-classificator.png"
-          class="w-full hidden md:block bg-nav h-36 lg:h-72 object-cover" />
       </div>
     </section>
   </div>
 </template>
 <script>
+import gameLauncherIMG from "../assets/work/launcher.png";
+import skampIMG from "../assets/work/skamp.hr.png";
+import istramusicshopIMG from "../assets/work/istramusicshop.png";
+import macroquietcomIMG from "../assets/work/macroquiet.png";
+import apartmentLukaIMG from "../assets/work/apartment-luka.png";
+import studentClassificatorIMG from "../assets/work/student-classificator.png";
 export default {
   name: "work-gallery",
+  data() {
+    return {
+      portfolio: [
+        {
+          title: "MacroQuiet Game Launcher",
+          imgSRC: gameLauncherIMG,
+          webSRC: "https://github.com/lukablaskovic/macroquiet-game-launcher",
+        },
+        {
+          title: "Skamp.hr Website",
+          imgSRC: skampIMG,
+          webSRC: "https://github.com/lukablaskovic/skamp.hr",
+        },
+        {
+          title: "IstraMusicShop Mobile App",
+          imgSRC: istramusicshopIMG,
+          webSRC: "https://github.com/lukablaskovic/istra_music_shop",
+        },
+        {
+          title: "MacroQuiet.com Website",
+          imgSRC: macroquietcomIMG,
+          webSRC: "https://github.com/lukablaskovic/macroquiet-frontend",
+        },
+        {
+          title: "Apartment Luka Website",
+          imgSRC: apartmentLukaIMG,
+          webSRC: "https://github.com/lukablaskovic/apartment-app",
+        },
+        {
+          title: "Student Classificator App",
+          imgSRC: studentClassificatorIMG,
+          webSRC:
+            "https://github.com/lukablaskovic/student-enquiries-classification",
+        },
+      ],
+    };
+  },
 };
 </script>
 <style lang=""></style>
