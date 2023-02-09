@@ -22,7 +22,7 @@
             <a
               href="#work"
               :class="
-                scrollPosition >= 900 && scrollPosition < 2500
+                scrollPosition >= 900 && scrollPosition < 2400
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -34,7 +34,7 @@
             <a
               href="#publications"
               :class="
-                scrollPosition >= 2500 && scrollPosition < 3200
+                scrollPosition >= 2400 && scrollPosition < 3300
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -46,7 +46,7 @@
             <a
               href="#hire"
               :class="
-                scrollPosition >= 3200
+                scrollPosition >= 3300
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
