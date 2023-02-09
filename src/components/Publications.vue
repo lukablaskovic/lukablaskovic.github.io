@@ -1,15 +1,15 @@
 <template>
   <div
-    class="container mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
     <section class="w-full">
       <h2 id="publications" class="secondary-title">Publications</h2>
       <p class="section-paragraph"></p>
-      <div class="hidden md:flex space-x-4">
+      <div class="md:flex space-x-4">
         <div
-          class="flex justify-center place-items-center"
+          class="flex justify-center max-w-full lg:max-w-sm"
           v-for="pub in publications"
           :key="pub.title">
-          <div class="block rounded-lg shadow-lg bg-white max-w-sm text-center">
+          <div class="block rounded-lg shadow-lg bg-white text-center m-2">
             <a :href="pub.link" target="_blank">
               <div
                 class="py-3 px-6 border-b text-gray-900 text-xl font-medium border-gray-300">

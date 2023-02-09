@@ -59,6 +59,12 @@
               target="_blank">
               <i class="fa-brands fa-linkedin fa-3x"></i>
             </a>
+            <!--Discord-->
+            <a
+              href="https://discordapp.com/users/355000513034715146"
+              target="_blank">
+              <i class="fa-brands fa-discord fa-3x"></i>
+            </a>
           </div>
         </div>
       </div>
