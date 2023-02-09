@@ -79,7 +79,10 @@
             lives of those around me.
           </h3>
           <a href="#work" class="text-center md:text-left"
-            ><button class="px-6 mt-12 py-2 bg-theme">My work</button></a
+            ><button
+              class="px-6 mt-12 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
+              My work
+            </button></a
           >
         </div>
         <img
@@ -115,6 +118,7 @@ export default {
   },
   methods: {
     handleScroll() {
+      console.log(window.scrollY);
       this.scrollPosition = window.scrollY;
     },
   },

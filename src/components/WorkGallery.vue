@@ -48,8 +48,15 @@ import gameLauncherIMG from "../assets/work/launcher.png";
 import skampIMG from "../assets/work/skamp.hr.png";
 import istramusicshopIMG from "../assets/work/istramusicshop.png";
 import macroquietcomIMG from "../assets/work/macroquiet.png";
+import macroquietLogoIMG from "../assets/work/macroquiet_logo.png";
 import apartmentLukaIMG from "../assets/work/apartment-luka.png";
 import studentClassificatorIMG from "../assets/work/student-classificator.png";
+import eurolimIMG from "../assets/work/eurolim.png";
+import milvusIMG from "../assets/work/milvus.png";
+import multimediaIMG from "../assets/work/multimedia.png";
+import hotelIMG from "../assets/work/hotel.png";
+import covidIMG from "../assets/work/covid.jpg";
+
 export default {
   name: "work-gallery",
   data() {
@@ -60,33 +67,34 @@ export default {
           imgSRC: gameLauncherIMG,
           webSRC: "https://github.com/lukablaskovic/macroquiet-game-launcher",
           description:
-            "Game launcher for MacroQuiet Games studio - written in JavaFX",
+            "Game launcher for MacroQuiet Games studio - developed using JavaFX framework",
         },
         {
           title: "Skamp.hr Website",
           imgSRC: skampIMG,
           webSRC: "https://github.com/lukablaskovic/skamp.hr",
-          description: "Website for Škamp Ltd created in Vue.js",
+          description: "Website for Škamp Ltd company- developed using Vue.js",
         },
         {
           title: "IstraMusicShop Mobile App",
           imgSRC: istramusicshopIMG,
           webSRC: "https://github.com/lukablaskovic/istra_music_shop",
           description:
-            "Mobile application for the sale of musical instruments - written in Vue.js",
+            "Mobile application for the sale of musical instruments - developed using Vue.js",
         },
         {
           title: "MacroQuiet.com Website",
           imgSRC: macroquietcomIMG,
           webSRC: "https://github.com/lukablaskovic/macroquiet-frontend",
           description:
-            "Front-end application for MacroQuiet Games studio - written in Vue.js",
+            "Front-end application for MacroQuiet Games studio - developed using Vue.js",
         },
         {
           title: "Apartment Luka Website",
           imgSRC: apartmentLukaIMG,
           webSRC: "https://github.com/lukablaskovic/apartment-app",
-          description: "Web application for home apartment - written in Vue.js",
+          description:
+            "Web application for home apartment - developed using Vite and Vue.js",
         },
         {
           title: "Student Classificator App",
@@ -94,7 +102,48 @@ export default {
           webSRC:
             "https://github.com/lukablaskovic/student-enquiries-classification",
           description:
-            "NLP application for classifying student enquiries - written in Python + Hugging face",
+            "NLP application for classifying student enquiries - developed using Python + Hugging face",
+        },
+        {
+          title: "Eurolim.hr Website",
+          imgSRC: eurolimIMG,
+          webSRC: "https://eurolim.hr/wp/",
+          description: "Website for Eurolim Ltd shop - built using Wordpress",
+        },
+        {
+          title: "MacroQuiet backend system",
+          imgSRC: macroquietLogoIMG,
+          webSRC: "https://github.com/lukablaskovic/macroquiet-backend",
+          description:
+            "Backend system for connection between videogames, web frontend and offline launcher - developed in Express.js|C#|Java",
+        },
+        {
+          title: "Image similarity search App",
+          imgSRC: milvusIMG,
+          webSRC: "https://github.com/lukablaskovic/reverse-image-search",
+          description:
+            "Image similarity search App developed using Milvus.io and Towhee.io. Undergraduate thesis",
+        },
+        {
+          title: "Hotel Management App and Database",
+          imgSRC: hotelIMG,
+          webSRC: "https://github.com/lukablaskovic/hotel-db",
+          description:
+            "Hotel Management Application and Database - developed in PHP and mySQL respectively",
+        },
+        {
+          title: "COVID-19 patients Flask App",
+          imgSRC: covidIMG,
+          webSRC: "https://github.com/lukablaskovic/covid19-flask",
+          description:
+            "Simple Python Flask App which connects to mySQL database for insertion and removal of Covid-19 patients",
+        },
+        {
+          title: "Simple website for multimedia course",
+          imgSRC: multimediaIMG,
+          webSRC: "https://github.com/lukablaskovic/multimedia-fipu",
+          description:
+            "Multimedia course website created using HTML|CSS|JS|Bootstrap",
         },
       ],
     };

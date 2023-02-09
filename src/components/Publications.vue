@@ -38,17 +38,24 @@ export default {
       publications: [
         {
           title:
+            "Stranded Away: Implementation and User Experience Evaluation of An Indie Platformer Game Developed Using Unity Engine",
+          desc: "The purpose of this study is to examine the user experience of an indie platformer game, Stranded Away, which was developed using the Unity engine. The game incorporates traditional platformer elements, such as collectibles and obstacles. Participants were recruited to play the game and then complete a post-use questionnaire to assess the extent to which Stranded Away meets the requirements of relevant user experience dimensions.",
+          journal: "MIPRO 2023",
+          link: "http://www.mipro.hr/Default.aspx",
+        },
+        {
+          title:
             "Evaluating the Perceived Quality of Mobile Banking Applications in Croatia: An Empirical Study",
           desc: "This study examines mobile banking app quality in Croatia, focusing on customer satisfaction and usage intentions. Results show that quality attributes like feedback and responsiveness contribute to ease of use and efficiency. No significant differences found among the 4 mobile banking apps examined but significant differences among users of different age groups. Advantages include efficiency and usefulness, while a lack of personalization options is seen as a drawback.",
           journal: "MDPI - Future Internet",
           link: "https://www.mdpi.com/1999-5903/15/1/8",
         },
+
         {
-          title:
-            "Stranded Away: Implementation and User Experience Evaluation of An Indie Platformer Game Developed Using Unity Engine",
-          desc: "The purpose of this study is to examine the user experience of an indie platformer game, Stranded Away, which was developed using the Unity engine. The game incorporates traditional platformer elements, such as collectibles and obstacles. Participants were recruited to play the game and then complete a post-use questionnaire to assess the extent to which Stranded Away meets the requirements of relevant user experience dimensions.",
-          journal: "MIPRO 2023",
-          link: "",
+          title: "Vector databases for unstructured data processing",
+          desc: "Undergraduate thesis that explores the concept of structured, unstructured, and semi-structured data and the use of vector databases in the processing and storage of unstructured data. The thesis focuses on the conversion of unstructured data, such as images, into numerical representations through deep learning models and the use of vector databases for simple search and retrieval of similar data. An image similarity search application was developed using Milvus.io vector database and Towhee.io Python module to demonstrate the working principles of vector databases.",
+          journal: "Undergraduate thesis",
+          link: "https://repozitorij.unipu.hr/islandora/object/unipu%3A7218",
         },
       ],
     };
