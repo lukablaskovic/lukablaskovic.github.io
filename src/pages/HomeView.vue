@@ -20,9 +20,9 @@
             >
 
             <a
-              href="#"
+              href="#work"
               :class="
-                scrollPosition >= 900 && scrollPosition < 1900
+                scrollPosition >= 900 && scrollPosition < 1800
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -32,9 +32,9 @@
             >
 
             <a
-              href="#"
+              href="#publications"
               :class="
-                scrollPosition >= 1900 && scrollPosition < 2200
+                scrollPosition >= 1800 && scrollPosition < 2200
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -44,7 +44,7 @@
             >
 
             <a
-              href="#"
+              href="#hire"
               :class="
                 scrollPosition >= 2200
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
@@ -112,7 +112,7 @@ export default {
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
-    console.log(process.env.VUE_APP_ALRIGHT);
+    console.log(import.meta.env.VITE_EMAIL_KEY);
   },
   methods: {
     handleScroll() {
