@@ -88,7 +88,7 @@
     </div>
   </footer>
 </template>
-<script>
+<script lang="ts">
 export default {
   data() {
     return {
@@ -105,7 +105,7 @@ export default {
 
   methods: {
     handleScroll() {
-      const scrollBtn = this.$refs.scrollTopButton;
+      const scrollBtn = this.$refs.scrollTopButton as HTMLElement;
 
       if (window.scrollY > 0) {
         scrollBtn.classList.remove("invisible");
