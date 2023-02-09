@@ -4,7 +4,7 @@
     <section class="w-full">
       <h2 id="publications" class="secondary-title">Publications</h2>
       <p class="section-paragraph"></p>
-      <div class="md:flex space-x-4">
+      <div class="md:flex xl:space-x-4">
         <div
           class="flex justify-center max-w-full lg:max-w-sm"
           v-for="pub in publications"
@@ -12,16 +12,16 @@
           <div class="block rounded-lg shadow-lg bg-white text-center m-2">
             <a :href="pub.link" target="_blank">
               <div
-                class="py-3 px-6 border-b text-gray-900 text-xl font-medium border-gray-300">
+                class="py-3 px-6 border-b text-gray-900 text-md xl:text-xl font-medium border-gray-300">
                 {{ pub.title }}
               </div></a
             >
             <div class="p-4">
-              <p class="text-gray-700 text-base mb-4">
+              <p class="text-gray-700 text-base text-justify mb-4">
                 {{ pub.desc }}
               </p>
             </div>
-            <div class="py-3 px-6 border-t border-gray-300 text-gray-600">
+            <div class="py-2 px-6 border-t border-gray-300 text-gray-600">
               {{ pub.journal }}
             </div>
           </div>

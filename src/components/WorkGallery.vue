@@ -4,7 +4,7 @@
     <section class="w-full">
       <h2 id="work" class="secondary-title">My work</h2>
       <p class="section-paragraph">
-        I’ve had the pleasure of working on various projects, designing and
+        I've had the pleasure of working on various projects, designing and
         implementing both frontend and backend solutions.
       </p>
 
@@ -23,8 +23,8 @@
               <div
                 class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div
-                class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center mb-8 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif text-3xl font-bold text-white">
+                class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center md:mb-8 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
+                <h1 class="font-dmserif md:text-3xl font-bold text-white mt-12">
                   {{ item.title }}
                 </h1>
                 <p
@@ -139,7 +139,7 @@ export default {
             "Simple Python Flask App which connects to mySQL database for insertion and removal of Covid-19 patients",
         },
         {
-          title: "Simple website for multimedia course",
+          title: "Simple website for Multimedia course",
           imgSRC: multimediaIMG,
           webSRC: "https://github.com/lukablaskovic/multimedia-fipu",
           description:
