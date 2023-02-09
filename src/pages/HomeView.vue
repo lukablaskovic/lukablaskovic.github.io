@@ -112,11 +112,9 @@ export default {
   },
   created() {
     window.addEventListener("scroll", this.handleScroll);
-    console.log(import.meta.env.VITE_EMAIL_KEY);
   },
   methods: {
     handleScroll() {
-      console.log(window.scrollY);
       this.scrollPosition = window.scrollY;
     },
   },

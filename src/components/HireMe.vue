@@ -12,11 +12,13 @@
           <div>
             <label class="text-white block mb-6 text-xl font-bold">Name</label>
             <input
+              v-model="emailForm.from_name"
               class="w-full border border-input-border bg-input px-4 py-4" />
           </div>
           <div>
             <label class="text-white block mb-6 text-xl font-bold">Email</label>
             <input
+              v-model="emailForm.from_email"
               type="email"
               class="w-full border border-input-border bg-input px-4 py-4" />
           </div>
@@ -25,10 +27,12 @@
               >Message</label
             >
             <textarea
-              type="email"
+              type="text"
+              v-model="emailForm.message"
               class="w-full border border-input-border bg-input px-4 py-4 h-56 resize-none"></textarea>
           </div>
           <button
+            @click.prevent="sendEmail"
             class="px-6 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
             Send it!
           </button>
@@ -62,14 +66,28 @@
   </div>
 </template>
 <script>
+import emailjs from "@emailjs/browser";
+
 export default {
   name: "hire-me",
   data() {
     return {
-      name: "",
-      email: "",
-      message: "",
+      emailForm: { from_name: "", from_email: "", message: "" },
     };
+  },
+  methods: {
+    async sendEmail() {
+      try {
+        await emailjs.send(
+          "service_zbc9jzl",
+          "template_ibdvrhp",
+          this.emailForm
+        );
+        console.log("SUCCESS!");
+      } catch (e) {
+        console.log("FAILED...", e);
+      }
+    },
   },
 };
 </script>
