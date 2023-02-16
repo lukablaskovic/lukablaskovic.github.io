@@ -21,7 +21,7 @@
               target="_blank"
               class="inline-block align-middle items-center mt-4">
               <span
-                class="px-4 py-2 rounded-full text-white bg-theme font-semibold text-sm w-max cursor-pointer active:bg-gray-300 transition duration-300 ease">
+                class="px-4 py-2 rounded-full text-white bg-selected-text hover:bg-theme font-semibold text-sm w-max cursor-pointer transition duration-300 ease">
                 <component :is="pub.icon" class="inline h-6 w-6 text-white" />
                 {{ pub.journal }}
               </span>

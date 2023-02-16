@@ -119,7 +119,6 @@ export default {
   methods: {
     handleScroll() {
       this.scrollPosition = window.scrollY;
-      console.log(this.scrollPosition);
     },
   },
 };
