@@ -19,22 +19,30 @@
               class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/50">
               <img
                 :src="item.imgSRC"
-                class="w-full md:block bg-nav h-48 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-125" />
+                class="w-full md:block bg-nav h-56 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-125" />
               <div
                 class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
               <div
                 class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center md:mb-8 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
-                <h1 class="font-dmserif md:text-3xl font-bold text-white mt-12">
+                <h1
+                  class="font-dmserif text-md md:text-3xl font-bold text-white mt-12">
                   {{ item.title }}
                 </h1>
                 <p
-                  class="mb-3 text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  class="mb-3 text-sm lg:text-lg italic text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   {{ item.description }}
                 </p>
                 <button
-                  class="rounded-full bg-neutral-900 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
-                  See More
+                  class="rounded-full bg-neutral-900 hover:bg-selected-text py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                  Source code
                 </button>
+                <a :href="item.buildLink" target="_blank">
+                  <button
+                    v-if="item.buildAvailable"
+                    class="rounded-full bg-theme hover:bg-selected-text mt-2 py-2 px-3.5 font-com text-sm capitalize text-white shadow shadow-black/60">
+                    Live build
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -68,12 +76,17 @@ export default {
           webSRC: "https://github.com/lukablaskovic/macroquiet-game-launcher",
           description:
             "Game launcher for MacroQuiet Games studio - developed using JavaFX framework",
+          buildAvailable: true,
+          buildLink:
+            "https://github.com/lukablaskovic/macroquiet-game-launcher/releases/tag/v0.1.0-alpha",
         },
         {
           title: "Skamp.hr Website",
           imgSRC: skampIMG,
           webSRC: "https://github.com/lukablaskovic/skamp.hr",
           description: "Website for Škamp Ltd company- developed using Vue.js",
+          buildAvailable: true,
+          buildLink: "https://skamp.hr/",
         },
         {
           title: "IstraMusicShop Mobile App",
@@ -81,6 +94,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/istra_music_shop",
           description:
             "Mobile application for the sale of musical instruments - developed using Vue.js",
+          buildAvailable: true,
+          buildLink: "https://istramusicshop.netlify.app/",
         },
         {
           title: "MacroQuiet.com Website",
@@ -88,6 +103,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/macroquiet-frontend",
           description:
             "Front-end application for MacroQuiet Games studio - developed using Vue.js",
+          buildAvailable: true,
+          buildLink: "https://macroquiet.com/",
         },
         {
           title: "Apartment Luka Website",
@@ -95,6 +112,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/apartment-app",
           description:
             "Web application for home apartment - developed using Vite and Vue.js",
+          buildAvailable: true,
+          buildLink: "https://apartment-luka.netlify.app/",
         },
         {
           title: "Student Classificator App",
@@ -103,12 +122,16 @@ export default {
             "https://github.com/lukablaskovic/student-enquiries-classification",
           description:
             "NLP application for classifying student enquiries - developed using Python + Hugging face",
+          buildAvailable: false,
+          buildLink: "",
         },
         {
           title: "Eurolim.hr Website",
           imgSRC: eurolimIMG,
           webSRC: "https://eurolim.hr/wp/",
           description: "Website for Eurolim Ltd shop - built using Wordpress",
+          buildAvailable: true,
+          buildLink: "https://eurolim.hr/wp/",
         },
         {
           title: "MacroQuiet backend system",
@@ -116,6 +139,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/macroquiet-backend",
           description:
             "Backend system for connection between videogames, web frontend and offline launcher - developed in Express.js|C#|Java",
+          buildAvailable: false,
+          buildLink: "",
         },
         {
           title: "Image similarity search App",
@@ -123,6 +148,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/reverse-image-search",
           description:
             "Image similarity search App developed using Milvus.io and Towhee.io. Undergraduate thesis",
+          buildAvailable: false,
+          buildLink: "",
         },
         {
           title: "Hotel Management App and Database",
@@ -130,13 +157,17 @@ export default {
           webSRC: "https://github.com/lukablaskovic/hotel-db",
           description:
             "Hotel Management Application and Database - developed in PHP and mySQL respectively",
+          buildAvailable: false,
+          buildLink: "",
         },
         {
           title: "COVID-19 patients Flask App",
           imgSRC: covidIMG,
           webSRC: "https://github.com/lukablaskovic/covid19-flask",
           description:
-            "Simple Python Flask App which connects to mySQL database for insertion and removal of Covid-19 patients",
+            "Simple Python Flask App which connects to mySQL database for insertion and removal of patients",
+          buildAvailable: false,
+          buildLink: "",
         },
         {
           title: "Simple website for Multimedia course",
@@ -144,6 +175,8 @@ export default {
           webSRC: "https://github.com/lukablaskovic/multimedia-fipu",
           description:
             "Multimedia course website created using HTML|CSS|JS|Bootstrap",
+          buildAvailable: true,
+          buildLink: "https://lukablaskovic-fipu.netlify.app/index.html",
         },
       ],
     };

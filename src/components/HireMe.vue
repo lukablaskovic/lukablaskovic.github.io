@@ -7,7 +7,7 @@
         Feel free to to contact me any time, through any method below.
       </p>
 
-      <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-24">
+      <div class="w-full grid lg:grid-cols-2 gap-8 lg:gap-32 mt-12 md:mt-24">
         <div class="space-y-12">
           <div>
             <label class="text-white block mb-6 text-xl font-bold">Name</label>

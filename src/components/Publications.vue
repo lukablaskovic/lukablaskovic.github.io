@@ -16,13 +16,21 @@
                 {{ pub.title }}
               </div></a
             >
+            <a
+              :href="pub.link"
+              target="_blank"
+              class="inline-block align-middle items-center mt-4">
+              <span
+                class="px-4 py-2 rounded-full text-white bg-theme font-semibold text-sm w-max cursor-pointer active:bg-gray-300 transition duration-300 ease">
+                <component :is="pub.icon" class="inline h-6 w-6 text-white" />
+                {{ pub.journal }}
+              </span>
+            </a>
             <div class="p-4">
-              <p class="text-gray-700 text-base text-justify mb-4">
+              <p class="text-gray-700 text-sm md:text-base text-justify mb-4">
                 {{ pub.desc }}
               </p>
-            </div>
-            <div class="py-2 px-6 border-t border-gray-300 text-gray-600">
-              {{ pub.journal }}
+              <hr />
             </div>
           </div>
         </div>
@@ -31,8 +39,14 @@
   </div>
 </template>
 <script>
+import { AcademicCapIcon, NewspaperIcon } from "@heroicons/vue/24/solid";
+
 export default {
   name: "publications",
+  components: {
+    AcademicCapIcon,
+    NewspaperIcon,
+  },
   data() {
     return {
       publications: [
@@ -42,6 +56,7 @@ export default {
           desc: "The purpose of this study is to examine the user experience of an indie platformer game, Stranded Away, which was developed using the Unity engine. The game incorporates traditional platformer elements, such as collectibles and obstacles. Participants were recruited to play the game and then complete a post-use questionnaire to assess the extent to which Stranded Away meets the requirements of relevant user experience dimensions.",
           journal: "MIPRO 2023",
           link: "http://www.mipro.hr/Default.aspx",
+          icon: NewspaperIcon,
         },
         {
           title:
@@ -49,6 +64,7 @@ export default {
           desc: "This study examines mobile banking app quality in Croatia, focusing on customer satisfaction and usage intentions. Results show that quality attributes like feedback and responsiveness contribute to ease of use and efficiency. No significant differences found among the 4 mobile banking apps examined but significant differences among users of different age groups. Advantages include efficiency and usefulness, while a lack of personalization options is seen as a drawback.",
           journal: "MDPI - Future Internet",
           link: "https://www.mdpi.com/1999-5903/15/1/8",
+          icon: NewspaperIcon,
         },
 
         {
@@ -56,6 +72,7 @@ export default {
           desc: "Undergraduate thesis that explores the concept of structured, unstructured, and semi-structured data and the use of vector databases in the processing and storage of unstructured data. The thesis focuses on the conversion of unstructured data, such as images, into numerical representations through deep learning models and the use of vector databases for simple search and retrieval of similar data. An image similarity search application was developed using Milvus.io vector database and Towhee.io Python module to demonstrate the working principles of vector databases.",
           journal: "Undergraduate thesis",
           link: "https://repozitorij.unipu.hr/islandora/object/unipu%3A7218",
+          icon: AcademicCapIcon,
         },
       ],
     };

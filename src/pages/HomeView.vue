@@ -10,7 +10,7 @@
             <a
               href="#"
               :class="
-                scrollPosition < 900
+                scrollPosition < 909
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -22,7 +22,7 @@
             <a
               href="#work"
               :class="
-                scrollPosition >= 900 && scrollPosition < 2400
+                scrollPosition >= 909 && scrollPosition < 2469
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -34,7 +34,7 @@
             <a
               href="#publications"
               :class="
-                scrollPosition >= 2400 && scrollPosition < 3300
+                scrollPosition >= 2469 && scrollPosition < 3280
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -46,7 +46,7 @@
             <a
               href="#hire"
               :class="
-                scrollPosition >= 3300
+                scrollPosition >= 3280
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -119,6 +119,7 @@ export default {
   methods: {
     handleScroll() {
       this.scrollPosition = window.scrollY;
+      console.log(this.scrollPosition);
     },
   },
 };
