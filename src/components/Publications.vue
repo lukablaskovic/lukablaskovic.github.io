@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-12 w-full">
     <section class="w-full">
       <h2 id="publications" class="secondary-title">Publications</h2>
       <p class="section-paragraph"></p>
@@ -50,6 +50,14 @@ export default {
   data() {
     return {
       publications: [
+        {
+          title:
+            "Evaluating a Conceptual Model for Measuring Gaming Experience: A Case Study of Stranded Away Platformer Game",
+          desc: "This paper investigates the interplay of gaming experience dimensions in platform video games and their impact on players' behavioral intentions. An empirical study using a post-use questionnaire and the partial least squares structural equation modeling (PLS-SEM) method highlights the importance of evaluating different facets of the gaming experience, offering potential tools for game designers to improve overall game quality.",
+          journal: "MDPI - Information",
+          link: "https://www.mdpi.com/journal/information/special_issues/AI_GS_Education",
+          icon: NewspaperIcon,
+        },
         {
           title:
             "Stranded Away: Implementation and User Experience Evaluation of An Indie Platformer Game Developed Using Unity Engine",

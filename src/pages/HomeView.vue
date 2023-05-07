@@ -68,15 +68,16 @@
             Blašković
           </h2>
           <h3 class="mt-4 text-center md:text-left">
-            I am a Full stack developer and IT enthusiast based in Croatia.
+            I am a Full Stack Developer and IT enthusiast based in Croatia,
+            currently pursuing a Master's degree in Informatics at Juraj Dobrila
+            University of Pula.
           </h3>
+
           <h3 class="text-center md:text-left">
-            Currently, I am studying towards a master's degree in Informatics,
-            at Juraj Dobrila University of Pula - Croatia.
-          </h3>
-          <h3 class="text-center md:text-left">
-            I am passionate about building excellent software that improves the
-            lives of those around me.
+            With a strong passion for creating exceptional software, I am
+            committed to utilizing my expertise to positively impact the lives
+            of those around me and contribute to the ever-evolving world of
+            technology.
           </h3>
           <a href="#work" class="text-center md:text-left"
             ><button
