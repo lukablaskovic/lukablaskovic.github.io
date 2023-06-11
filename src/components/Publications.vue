@@ -1,37 +1,30 @@
 <template>
   <div
     class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-12 w-full">
-    <section class="w-full">
-      <h2 id="publications" class="secondary-title">Publications</h2>
-      <p class="section-paragraph"></p>
-      <div class="md:flex xl:space-x-4">
+    <section>
+      <h2 id="publications" class="secondary-title mb-6">Publications</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div
-          class="flex justify-center max-w-full lg:max-w-sm"
+          class="card border-gray-300 shadow-lg rounded-lg bg-gray-100"
           v-for="pub in publications"
           :key="pub.title">
-          <div class="block rounded-lg shadow-lg bg-white text-center m-2">
-            <a :href="pub.link" target="_blank">
-              <div
-                class="py-3 px-6 border-b text-gray-900 text-md xl:text-xl font-medium border-gray-300">
-                {{ pub.title }}
-              </div></a
+          <div class="card-body p-4">
+            <a
+              :href="pub.link"
+              target="_blank"
+              class="block mb-2 text-lg font-bold text-gray-900 hover:text-theme transition ease-in-out duration-150"
+              >{{ pub.title }}</a
             >
             <a
               :href="pub.link"
               target="_blank"
-              class="inline-block align-middle items-center mt-4">
-              <span
-                class="px-4 py-2 rounded-full text-white bg-selected-text hover:bg-theme font-semibold text-sm w-max cursor-pointer transition duration-300 ease">
-                <component :is="pub.icon" class="inline h-6 w-6 text-white" />
-                {{ pub.journal }}
-              </span>
+              class="inline-flex items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150">
+              <component
+                :is="pub.icon"
+                class="inline h-6 w-6 text-white mr-2" />
+              <span>{{ pub.journal }}</span>
             </a>
-            <div class="p-4">
-              <p class="text-gray-700 text-sm md:text-base text-justify mb-4">
-                {{ pub.desc }}
-              </p>
-              <hr />
-            </div>
+            <p class="text-gray-700 text-sm text-justify">{{ pub.desc }}</p>
           </div>
         </div>
       </div>
@@ -49,6 +42,8 @@ export default {
   },
   data() {
     return {
+      isExtended: false,
+
       publications: [
         {
           title:

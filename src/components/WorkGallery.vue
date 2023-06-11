@@ -55,21 +55,78 @@
 import gameLauncherIMG from "../assets/work/launcher.png";
 import skampIMG from "../assets/work/skamp.hr.png";
 import istramusicshopIMG from "../assets/work/istramusicshop.png";
-import macroquietcomIMG from "../assets/work/macroquiet.png";
+import macroquiet_frontendIMG from "../assets/work/macroquiet_frontend.png";
 import macroquietLogoIMG from "../assets/work/macroquiet_logo.png";
 import apartmentLukaIMG from "../assets/work/apartment-luka.png";
 import studentClassificatorIMG from "../assets/work/student-classificator.png";
 import eurolimIMG from "../assets/work/eurolim.png";
 import milvusIMG from "../assets/work/milvus.png";
-import multimediaIMG from "../assets/work/multimedia.png";
+import rasaIMG from "../assets/work/rasa.png";
 import hotelIMG from "../assets/work/hotel.png";
 import covidIMG from "../assets/work/covid.jpg";
-
+import fastAPIIMG from "../assets/work/fastapi.png";
+import bookstackerIMG from "../assets/work/bookstacker.png";
+import naiveBayesIMG from "../assets/work/naive-bayes.jpg";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "AquaPod FastAPI Backend",
+          imgSRC: fastAPIIMG,
+          webSRC: "https://github.com/lukablaskovic/aquapod-fastapi",
+          description:
+            "AquaPod is an innovative project designed to address marine pollution by autonomously collecting waste from the sea -> FastAPI | PostgreSQL | MQTT",
+
+          buildSRC: "",
+        },
+        {
+          title: "MacroQuiet.com Web",
+          imgSRC: macroquiet_frontendIMG,
+          webSRC: "https://github.com/lukablaskovic/macroquiet-frontend",
+          description:
+            "Front-end application for MacroQuiet Games Studio - VUE3, TailwindCSS, Vite.js",
+
+          buildSRC: "https://macroquiet.com/",
+        },
+        {
+          title: "MacroQuiet Express.js Server",
+          imgSRC: macroquietLogoIMG,
+          webSRC: "https://github.com/lukablaskovic/macroquiet-express-server",
+          description:
+            "Web server developed for communication between MacroQuiet videogames, web frontend and offline launcher -> Express.js | C# | Java",
+
+          buildSRC: "https://macroquiet.herokuapp.com/",
+        },
+        {
+          title: "Bookstacker - Android App",
+          imgSRC: bookstackerIMG,
+          webSRC: "https://github.com/lukablaskovic/bookstacker",
+          description:
+            "Bookstacker is an Android application that enables users to store their favourite books in a personal, easy-to-manage digital library. Android | Kotlin",
+
+          buildSRC: "",
+        },
+        {
+          title: "Student Office Chatbot",
+          imgSRC: rasaIMG,
+          webSRC: "https://github.com/lukablaskovic/student-office-chatbot",
+          description:
+            "Student office chatbot in Croatian language. Developed using Rasa",
+
+          buildSRC: "",
+        },
+        {
+          title: "Student Classificator App",
+          imgSRC: studentClassificatorIMG,
+          webSRC:
+            "https://github.com/lukablaskovic/student-enquiries-classification",
+          description:
+            "NLP application for classifying student enquiries -> Python | Hugging face",
+
+          buildSRC: "",
+        },
         {
           title: "MacroQuiet Game Launcher",
           imgSRC: gameLauncherIMG,
@@ -81,66 +138,22 @@ export default {
             "https://github.com/lukablaskovic/macroquiet-game-launcher/releases/tag/v0.1.0-alpha",
         },
         {
-          title: "Skamp.hr Website",
-          imgSRC: skampIMG,
-          webSRC: "https://github.com/lukablaskovic/skamp.hr",
-          description: "Website for Škamp Ltd company- developed using Vue.js",
-
-          buildSRC: "https://skamp.hr/",
-        },
-        {
-          title: "IstraMusicShop Mobile App",
-          imgSRC: istramusicshopIMG,
-          webSRC: "https://github.com/lukablaskovic/istra_music_shop",
+          title: "Naive Bayes Spam Filter",
+          imgSRC: naiveBayesIMG,
+          webSRC: "https://github.com/lukablaskovic/naive-bayes-spam_filter",
           description:
-            "Mobile application for the sale of musical instruments - developed using Vue.js",
+            "A naive Bayes spam filter developed in R - Project for Applied Statistics Course",
 
-          buildSRC: "https://istramusicshop.netlify.app/",
+          buildSRC: "",
         },
         {
-          title: "MacroQuiet.com Website",
-          imgSRC: macroquietcomIMG,
-          webSRC: "https://github.com/lukablaskovic/macroquiet-frontend",
-          description:
-            "Front-end application for MacroQuiet Games studio - developed using Vue.js",
-
-          buildSRC: "https://macroquiet.com/",
-        },
-        {
-          title: "Apartment Luka Website",
+          title: "Apartment Luka Web App",
           imgSRC: apartmentLukaIMG,
           webSRC: "https://github.com/lukablaskovic/apartment-app",
           description:
             "Web application for home apartment - developed using Vite and Vue.js",
 
           buildSRC: "https://apartment-luka.netlify.app/",
-        },
-        {
-          title: "Student Classificator App",
-          imgSRC: studentClassificatorIMG,
-          webSRC:
-            "https://github.com/lukablaskovic/student-enquiries-classification",
-          description:
-            "NLP application for classifying student enquiries - developed using Python + Hugging face",
-
-          buildSRC: "",
-        },
-        {
-          title: "Eurolim.hr Website",
-          imgSRC: eurolimIMG,
-          webSRC: "",
-          description: "Website for Eurolim Ltd shop - built using Wordpress",
-          buildAvailable: true,
-          buildSRC: "https://eurolim.hr/wp/",
-        },
-        {
-          title: "MacroQuiet backend system",
-          imgSRC: macroquietLogoIMG,
-          webSRC: "https://github.com/lukablaskovic/macroquiet-backend",
-          description:
-            "Backend system for connection between videogames, web frontend and offline launcher - developed in Express.js|C#|Java",
-
-          buildSRC: "",
         },
         {
           title: "Image similarity search App",
@@ -152,11 +165,39 @@ export default {
           buildSRC: "",
         },
         {
+          title: "Skamp.hr Website",
+          imgSRC: skampIMG,
+          webSRC: "https://github.com/lukablaskovic/skamp.hr",
+          description: "Website for Škamp Ltd company- developed using Vue.js",
+
+          buildSRC: "https://skamp.hr/",
+        },
+
+        {
+          title: "IstraMusicShop Mobile App",
+          imgSRC: istramusicshopIMG,
+          webSRC: "https://github.com/lukablaskovic/istra_music_shop",
+          description:
+            "Mobile application for the sale of musical instruments - developed using Vue.js",
+
+          buildSRC: "https://istramusicshop.netlify.app/",
+        },
+
+        {
+          title: "Eurolim.hr Website",
+          imgSRC: eurolimIMG,
+          webSRC: "",
+          description: "Website for Eurolim Ltd shop - Wordpress",
+          buildAvailable: true,
+          buildSRC: "https://eurolim.hr/wp/",
+        },
+
+        {
           title: "Hotel Management App and Database",
           imgSRC: hotelIMG,
           webSRC: "https://github.com/lukablaskovic/hotel-db",
           description:
-            "Hotel Management Application and Database - developed in PHP and mySQL respectively",
+            "Hotel Management Application and Database -> mySQL | PHP | HTML | CSS | JS",
 
           buildSRC: "",
         },
@@ -168,15 +209,6 @@ export default {
             "Simple Python Flask App which connects to mySQL database for insertion and removal of patients",
 
           buildSRC: "",
-        },
-        {
-          title: "Simple website for Multimedia course",
-          imgSRC: multimediaIMG,
-          webSRC: "https://github.com/lukablaskovic/multimedia-fipu",
-          description:
-            "Multimedia course website created using HTML|CSS|JS|Bootstrap",
-
-          buildSRC: "https://lukablaskovic-fipu.netlify.app/index.html",
         },
       ],
     };
