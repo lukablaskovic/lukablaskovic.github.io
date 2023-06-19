@@ -50,7 +50,7 @@ export default {
             "Evaluating a Conceptual Model for Measuring Gaming Experience: A Case Study of Stranded Away Platformer Game",
           desc: "This paper investigates the interplay of gaming experience dimensions in platform video games and their impact on players' behavioral intentions. An empirical study using a post-use questionnaire and the partial least squares structural equation modeling (PLS-SEM) method highlights the importance of evaluating different facets of the gaming experience, offering potential tools for game designers to improve overall game quality.",
           journal: "MDPI - Information",
-          link: "https://www.mdpi.com/journal/information/special_issues/AI_GS_Education",
+          link: "https://doi.org/10.3390/info14060350",
           icon: NewspaperIcon,
         },
         {
