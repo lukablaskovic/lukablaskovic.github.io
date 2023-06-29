@@ -72,7 +72,7 @@
             currently pursuing a Master's degree in Informatics at Juraj Dobrila
             University of Pula.
           </h3>
-
+          <br />
           <h3 class="text-center md:text-left">
             With a strong passion for creating exceptional software, I am
             committed to utilizing my expertise to positively impact the lives

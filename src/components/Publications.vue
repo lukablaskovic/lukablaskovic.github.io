@@ -58,7 +58,7 @@ export default {
             "Stranded Away: Implementation and User Experience Evaluation of An Indie Platformer Game Developed Using Unity Engine",
           desc: "The purpose of this study is to examine the user experience of an indie platformer game, Stranded Away, which was developed using the Unity engine. The game incorporates traditional platformer elements, such as collectibles and obstacles. Participants were recruited to play the game and then complete a post-use questionnaire to assess the extent to which Stranded Away meets the requirements of relevant user experience dimensions.",
           journal: "MIPRO 2023",
-          link: "http://www.mipro.hr/Default.aspx",
+          link: "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=izxgOacAAAAJ&citation_for_view=izxgOacAAAAJ:9yKSN-GCB0IC",
           icon: NewspaperIcon,
         },
         {
