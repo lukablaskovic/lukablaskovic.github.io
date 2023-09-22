@@ -67,11 +67,41 @@ import covidIMG from "../assets/work/covid.jpg";
 import fastAPIIMG from "../assets/work/fastapi.png";
 import bookstackerIMG from "../assets/work/bookstacker.png";
 import naiveBayesIMG from "../assets/work/naive-bayes.jpg";
+import solidityIMG from "../assets/work/solidity.jpg";
+import fipu_internshipIMG from "../assets/work/fipu-internship.png";
+import music_cnn_IMG from "../assets/work/audio.jpg";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "UNIPU Certify",
+          imgSRC: solidityIMG,
+          webSRC: "https://github.com/lukablaskovic/aquapod-fastapi",
+          description:
+            "Mint Your Academic Certificates as NFTs 🎓🔗 -> NFT | Solidity | Vue.js",
+
+          buildSRC: "",
+        },
+        {
+          title: "Music Genre Classification using CNN",
+          imgSRC: music_cnn_IMG,
+          webSRC: "https://github.com/lukablaskovic/music-classification-cnn",
+          description:
+            "A deep learning project leveraging Convolutional Neural Networks to classify audio clips into musical genres -> Tensorflow | Keras | CNN",
+
+          buildSRC: "",
+        },
+        {
+          title: "FIPU Internship System",
+          imgSRC: fipu_internshipIMG,
+          webSRC: "https://github.com/stars/lukablaskovic/lists/fipu-praksa",
+          description:
+            "Complete system for handling faculty internships, for students, companies and professors -> Python | Baserow.io | FastAPI | PostrgreSQL | Vue.js",
+
+          buildSRC: "",
+        },
         {
           title: "AquaPod FastAPI Backend",
           imgSRC: fastAPIIMG,

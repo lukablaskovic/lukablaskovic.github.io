@@ -63,6 +63,13 @@
               <i
                 class="fa-brands fa-linkedin fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
+            <!-- ResearchGate -->
+            <a
+              href="https://www.researchgate.net/profile/Luka-Blaskovic-2/research"
+              target="_blank">
+              <i
+                class="fa-brands fa-researchgate fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
+            </a>
             <!--Discord-->
             <a
               href="https://discordapp.com/users/355000513034715146"
