@@ -78,7 +78,7 @@ export default {
         {
           title: "UNIPU Certify",
           imgSRC: solidityIMG,
-          webSRC: "https://github.com/lukablaskovic/aquapod-fastapi",
+          webSRC: "https://github.com/lukablaskovic/unipu-certify",
           description:
             "Mint Your Academic Certificates as NFTs 🎓🔗 -> NFT | Solidity | Vue.js",
 
