@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mt-32 md:mt-48 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+    class="container mt-32 md:mt-24 flex justify-between items-center mx-auto px-4 md:px-14 lg:px-24 w-full">
     <section class="w-full">
       <h2 id="work" class="secondary-title">My work</h2>
       <p class="section-paragraph">
@@ -12,18 +12,20 @@
         <div
           v-for="item in portfolio"
           :key="item.title"
-          class="flex items-center justify-center bg-neutral-800">
+          class="flex items-center justify-center bg-neutral-800"
+          data-aos="zoom-in-up"
+          data-aos-delay="300">
           <div
             class="group relative cursor-pointer items-center justify-center overflow-hidden transition-shadow hover:shadow-xl hover:shadow-black/50">
             <img
               :src="item.imgSRC"
-              class="w-full md:block bg-nav h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-125" />
+              class="w-full md:block bg-nav h-64 lg:h-72 object-cover transition-transform duration-500 group-hover:scale-125 rounded-md" />
             <div
               class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black group-hover:from-black/70 group-hover:via-black/60 group-hover:to-black/70"></div>
             <div
               class="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center md:mb-8 px-9 text-center transition-all duration-500 group-hover:translate-y-0">
               <h1
-                class="font-dmserif text-md md:text-3xl font-bold text-white mt-12">
+                class="font-dmserif text-sm md:text-3xl font-bold text-white md:mt-12">
                 {{ item.title }}
               </h1>
               <p
@@ -100,7 +102,7 @@ export default {
           description:
             "Complete system for handling faculty internships, for students, companies and professors -> Python | Baserow.io | FastAPI | PostrgreSQL | Vue.js",
 
-          buildSRC: "",
+          buildSRC: "http://fipubot.unipu.hr:4000/",
         },
         {
           title: "AquaPod FastAPI Backend",

@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container mt-8 md:mt-16 flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+      class="container mt-2 md:mt-16 flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
       <div class="flex flex-wrap md:flex-nowrap">
         <!--Dot nav-->
         <nav class="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
@@ -58,7 +58,7 @@
           <!--/Dot nav-->
         </nav>
         <div
-          class="flex flex-col lg:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my36">
+          class="flex flex-col 2xl:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my36">
           <h1
             class="font-bold text-selected-text text-xl md:text-xl lg:text-2xl text-center md:text-left">
             Full Stack Developer<br />
@@ -67,12 +67,12 @@
             Luka<br />
             Blašković
           </h2>
-          <h3 class="mt-4 text-center md:text-left">
+          <h3 class="mt-8 md:mt-4 md:mb-4 text-center md:text-left">
             I am a Full Stack Developer and IT enthusiast based in Croatia,
             currently pursuing a Master's degree in Informatics at Juraj Dobrila
             University of Pula.
           </h3>
-          <br />
+
           <h3 class="text-center md:text-left">
             With a strong passion for creating exceptional software, I am
             committed to utilizing my expertise to positively impact the lives
@@ -86,10 +86,12 @@
             </button></a
           >
         </div>
-        <img
-          class="rounded-full mx-auto mt-6 w-4/5 md:w-2/4 md:mt-0 -z-1"
-          src="../assets/lukablaskovic-profile.jpg"
-          alt="Luka Blašković profile image" />
+        <div class="image-container hidden md:block">
+          <img
+            class="rounded-full mx-auto md:w-3/4 2xl:w-3/4 md:ml-48 md:mt-0 -z-1 animate__animated animate__bounceIn"
+            src="../assets/me_no_bg_colored.png"
+            alt="Luka Blašković profile image" />
+        </div>
       </div>
     </div>
 
@@ -114,6 +116,9 @@ export default {
       scrollPosition: 0,
     };
   },
+  mounted() {
+    AOS.init();
+  },
   created() {
     window.addEventListener("scroll", this.handleScroll);
   },
@@ -125,4 +130,15 @@ export default {
 };
 </script>
 
-<style lang=""></style>
+<style>
+.image-container img {
+  transition: filter 0.5s ease;
+  /* Apply grayscale by default */
+  filter: grayscale(100%);
+}
+
+.image-container img:hover {
+  /* Remove filters on hover */
+  filter: none;
+}
+</style>

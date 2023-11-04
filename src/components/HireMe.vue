@@ -44,36 +44,48 @@
 
           <a
             href="mailto:lukablaskovic2000@gmail.com"
-            class="text-secondary underline mt-3 block"
-            >lukablaskovic2000@gmail.com</a
+            class="text-secondary hover:text-white underline mt-3 block"
+            data-aos="fade-down"
+            data-aos-delay="1600">
+            lukablaskovic2000@gmail.com</a
           >
 
           <!-- Socials -->
           <div class="flex mt-12 space-x-6">
             <!-- Github -->
 
-            <a href="https://github.com/lukablaskovic" target="_blank">
+            <a
+              href="https://github.com/lukablaskovic"
+              target="_blank"
+              data-aos="flip-left"
+              data-aos-delay="200">
               <i
                 class="fa-brands fa-github fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
             <!-- LinkedIn -->
             <a
               href="https://www.linkedin.com/in/luka-bla%C5%A1kovi%C4%87-575087231/"
-              target="_blank">
+              target="_blank"
+              data-aos="flip-left"
+              data-aos-delay="400">
               <i
                 class="fa-brands fa-linkedin fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
             <!-- ResearchGate -->
             <a
               href="https://www.researchgate.net/profile/Luka-Blaskovic-2/research"
-              target="_blank">
+              target="_blank"
+              data-aos="flip-left"
+              data-aos-delay="600">
               <i
                 class="fa-brands fa-researchgate fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
             <!--Discord-->
             <a
               href="https://discordapp.com/users/355000513034715146"
-              target="_blank">
+              target="_blank"
+              data-aos="flip-left"
+              data-aos-delay="800">
               <i
                 class="fa-brands fa-discord fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>

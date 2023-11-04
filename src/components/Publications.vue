@@ -1,24 +1,26 @@
 <template>
   <div
-    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-8 md:px-14 lg:px-12 w-full">
+    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-2 md:px-14 lg:px-12 w-full">
     <section>
       <h2 id="publications" class="secondary-title mb-6">Publications</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <div
           class="card border-gray-300 shadow-lg rounded-lg bg-gray-100"
           v-for="pub in publications"
-          :key="pub.title">
-          <div class="card-body p-4">
+          :key="pub.title"
+          data-aos="fade-right"
+          data-aos-delay="400">
+          <div class="card-body p-4 text-center md:text-left">
             <a
               :href="pub.link"
               target="_blank"
-              class="block mb-2 text-lg font-bold text-gray-900 hover:text-theme transition ease-in-out duration-150"
+              class="block mb-2 text-md md:text-lg text-center md:text-left font-bold text-gray-900 hover:text-theme transition ease-in-out duration-150"
               >{{ pub.title }}</a
             >
             <a
               :href="pub.link"
               target="_blank"
-              class="inline-flex items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150">
+              class="inline-flex text-sm md:text-base items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150">
               <component
                 :is="pub.icon"
                 class="inline h-6 w-6 text-white mr-2" />
