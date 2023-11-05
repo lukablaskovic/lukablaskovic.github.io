@@ -1,6 +1,6 @@
 <template>
   <div
-    class="px-6 md:container mt-32 md:mt-24 flex justify-between items-center mx-auto px-4 md:px-14 lg:px-24 w-full">
+    class="px-6 md:container mt-32 md:mt-24 flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
     <section class="w-full">
       <h2 id="work" class="secondary-title">My work</h2>
       <p class="section-paragraph">

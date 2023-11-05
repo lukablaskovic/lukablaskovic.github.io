@@ -73,7 +73,7 @@
               src="../assets/me_no_bg_colored.png"
               alt="Luka Blašković profile image" />
           </div>
-          <h3 class="mt-8 md:mt-4 md:mb-4 text-center md:text-left">
+          <h3 class="mb-4 mt-8 md:mt-4 text-center md:text-left">
             I am a Full Stack Developer and IT enthusiast based in Croatia,
             currently pursuing a Master's degree in Informatics at Juraj Dobrila
             University of Pula.

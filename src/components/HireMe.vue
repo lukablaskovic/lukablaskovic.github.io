@@ -36,7 +36,9 @@
             class="px-6 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
             Send it!
           </button>
-          <component :is="alert"></component>
+          <component
+            :is="alert"
+            class="animate__animated animate__bounceIn"></component>
         </div>
 
         <div class="mt-12">

@@ -85,34 +85,33 @@
   </footer>
 </template>
 
-<script>
-export default {
+<script lang="ts">
+import { defineComponent } from "vue";
+
+export default defineComponent({
   data() {
     return {
-      isDropdownOpen: false,
-      currentYear: new Date().getFullYear(),
-      scrollTopButton: null, // Initially null, will be set in mounted()
+      isDropdownOpen: false as boolean,
+      currentYear: new Date().getFullYear() as number,
+      scrollTopButton: null as HTMLElement | null, // use HTMLElement | null for better type inference
     };
   },
   methods: {
-    toggleDropdown() {
-      this.$nextTick(() => {
-        this.isDropdownOpen = !this.isDropdownOpen;
-      });
+    toggleDropdown(): void {
+      this.isDropdownOpen = !this.isDropdownOpen;
     },
-
-    closeDropdown() {
+    closeDropdown(): void {
       this.isDropdownOpen = false;
     },
-    handleClickOutside(event) {
-      if (!this.$el.contains(event.target)) {
+    handleClickOutside(event: MouseEvent): void {
+      if (!this.$el.contains(event.target as Node)) {
         this.closeDropdown();
       }
     },
-    scrollToTop() {
+    scrollToTop(): void {
       window.scrollTo({ top: 0, behavior: "smooth" });
     },
-    handleScroll() {
+    handleScroll(): void {
       if (this.scrollTopButton) {
         if (window.scrollY > 0) {
           this.scrollTopButton.classList.remove("invisible");
@@ -122,23 +121,16 @@ export default {
       }
     },
   },
-  mounted() {
-    // Added a null check after setting this.scrollTopButton
-    this.$nextTick(() => {
-      this.scrollTopButton = this.$refs.scrollTopButton;
-      if (this.scrollTopButton) {
-        document.addEventListener("scroll", this.handleScroll);
-      }
-    });
+  mounted(): void {
+    this.scrollTopButton = this.$refs.scrollTopButton as HTMLElement;
+    document.addEventListener("scroll", this.handleScroll);
     document.addEventListener("click", this.handleClickOutside);
   },
-  unmounted() {
-    if (this.scrollTopButton) {
-      document.removeEventListener("scroll", this.handleScroll);
-    }
+  unmounted(): void {
+    document.removeEventListener("scroll", this.handleScroll);
     document.removeEventListener("click", this.handleClickOutside);
   },
-};
+});
 </script>
 
 <style scoped>
