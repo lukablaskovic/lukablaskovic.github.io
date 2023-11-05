@@ -21,48 +21,44 @@
         </div>
 
         <div class="flex md:hidden justify-center">
-          <div>
-            <div class="dropdown relative">
-              <button
-                class="dropdown-toggle inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg active:text-white transition duration-150 ease-in-out items-center whitespace-nowrap"
-                type="button"
-                id="dropdownMenuButton2"
-                data-bs-toggle="dropdown"
-                aria-expanded="false">
-                <i class="fa-solid fa-bars fa-xl"></i>
-              </button>
-              <ul
-                class="dropdown-menu min-w-max absolute text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none bg-gray-800"
-                aria-labelledby="dropdownMenuButton2">
-                <a href="#">
-                  <span
-                    class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-selected-text"
-                    >Home</span
-                  >
-                </a>
-                <li>
-                  <a
-                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700 active:bg-blue-600"
-                    href="#work"
-                    >My work</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                    href="#publications"
-                    >Publications</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
-                    href="#hire"
-                    >Hire me</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="dropdown relative">
+            <button
+              @click="toggleDropdown()"
+              class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none transition duration-150 ease-in-out"
+              type="button">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+            <ul
+              v-show="isDropdownOpen"
+              class="dropdown-menu min-w-max absolute text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg bg-gray-800">
+              <a href="#">
+                <span
+                  class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-selected-text"
+                  >Home</span
+                >
+              </a>
+              <li>
+                <a
+                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700 active:bg-blue-600"
+                  href="#work"
+                  >My work</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
+                  href="#publications"
+                  >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
+                  href="#hire"
+                  >Hire me</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -88,37 +84,57 @@
     </div>
   </footer>
 </template>
-<script lang="ts">
-export default {
-  data() {
-    return {
-      currentYear: 2023,
-    };
-  },
-  mounted() {
-    window.addEventListener("scroll", this.handleScroll);
-  },
 
-  beforeUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  },
+<script setup lang="ts">
+import { ref, onMounted, onBeforeUnmount } from "vue";
 
-  methods: {
-    handleScroll() {
-      const scrollBtn = this.$refs.scrollTopButton as HTMLElement;
+const isDropdownOpen = ref(false);
+const currentYear = ref(new Date().getFullYear()); // Use ref here if you want it to be reactive
 
-      if (window.scrollY > 0) {
-        scrollBtn.classList.remove("invisible");
-      } else {
-        scrollBtn.classList.add("invisible");
-      }
-    },
-    scrollToTop() {
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    },
-  },
-};
+function toggleDropdown() {
+  isDropdownOpen.value = !isDropdownOpen.value;
+}
+
+function closeDropdown() {
+  isDropdownOpen.value = false;
+}
+
+function handleClickOutside(event: MouseEvent) {
+  // Use 'as' for type assertion if needed
+  if (!(event.target as HTMLElement).closest(".dropdown")) {
+    closeDropdown();
+  }
+}
+
+onMounted(() => {
+  document.addEventListener("click", handleClickOutside);
+  document.addEventListener("scroll", handleScroll);
+});
+
+onBeforeUnmount(() => {
+  document.removeEventListener("click", handleClickOutside);
+  document.removeEventListener("scroll", handleScroll);
+});
+
+const scrollTopButton = ref<HTMLElement | null>(null);
+
+function handleScroll() {
+  if (window.scrollY > 0) {
+    if (scrollTopButton.value) {
+      scrollTopButton.value.classList.remove("invisible");
+    }
+  } else {
+    if (scrollTopButton.value) {
+      scrollTopButton.value.classList.add("invisible");
+    }
+  }
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}
 </script>
+
 <style scoped>
 .logo {
   height: 6em;

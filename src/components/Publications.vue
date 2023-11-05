@@ -1,6 +1,6 @@
 <template>
   <div
-    class="container mt-24 lg:mt-48 flex justify-center items-center mx-auto px-2 md:px-14 lg:px-12 w-full">
+    class="px-6 md:container mt-24 lg:mt-48 flex justify-center items-center mx-auto md:px-14 lg:px-12 w-full">
     <section>
       <h2 id="publications" class="secondary-title mb-6">Publications</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

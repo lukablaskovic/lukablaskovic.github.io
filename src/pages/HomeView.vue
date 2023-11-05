@@ -1,7 +1,7 @@
 <template>
   <div>
     <div
-      class="container mt-2 md:mt-16 flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
+      class="px-6 md:container flex mt-2 md:mt-16 justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
       <div class="flex flex-wrap md:flex-nowrap">
         <!--Dot nav-->
         <nav class="lg:mr-24 lg:w-4 fixed left-percentage hidden xl:block">
@@ -60,13 +60,19 @@
         <div
           class="flex flex-col 2xl:ml-20 justify-center md:justify-start max-w-xl mt-0 md:my36">
           <h1
-            class="font-bold text-selected-text text-xl md:text-xl lg:text-2xl text-center md:text-left">
+            class="font-bold text-selected-text text-xl mb-2 md:text-xl lg:text-2xl text-center md:text-left">
             Full Stack Developer<br />
           </h1>
           <h2 class="text-4xl md:text-4xl lg:text-6xl text-center md:text-left">
             Luka<br />
             Blašković
           </h2>
+          <div class="image-container block md:hidden">
+            <img
+              class="rounded-full mx-auto w-1/2 -z-1 animate__animated animate__bounceIn"
+              src="../assets/me_no_bg_colored.png"
+              alt="Luka Blašković profile image" />
+          </div>
           <h3 class="mt-8 md:mt-4 md:mb-4 text-center md:text-left">
             I am a Full Stack Developer and IT enthusiast based in Croatia,
             currently pursuing a Master's degree in Informatics at Juraj Dobrila
