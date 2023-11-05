@@ -126,7 +126,7 @@ export default {
           this.alertTimeout(3000);
           return;
         }
-        await emailjs.send(
+        let result = await emailjs.send(
           "service_zbc9jzl",
           "template_ibdvrhp",
           this.emailForm
@@ -134,7 +134,6 @@ export default {
         this.alertShow = true;
         this.alert = shallowRef(successAlert);
       } catch (e) {
-        console.log("FAILED...", e);
         this.alertShow = true;
         this.alert = shallowRef(dangerAlert);
       }

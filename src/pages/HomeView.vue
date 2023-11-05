@@ -67,7 +67,7 @@
             Luka<br />
             Blašković
           </h2>
-          <div class="image-container block md:hidden">
+          <div class="image-container ml-4 mt-2 block md:hidden">
             <img
               class="rounded-full mx-auto w-1/2 -z-1 animate__animated animate__bounceIn"
               src="../assets/me_no_bg_colored.png"

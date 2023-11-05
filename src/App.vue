@@ -23,13 +23,13 @@
         <div class="flex md:hidden justify-center">
           <div class="dropdown relative">
             <button
-              @click="toggleDropdown()"
+              @click.stop.prevent="toggleDropdown"
               class="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md focus:outline-none transition duration-150 ease-in-out"
               type="button">
               <i class="fa-solid fa-bars fa-xl"></i>
             </button>
             <ul
-              v-show="isDropdownOpen"
+              v-if="isDropdownOpen"
               class="dropdown-menu min-w-max absolute text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg bg-gray-800">
               <a href="#">
                 <span
@@ -85,54 +85,60 @@
   </footer>
 </template>
 
-<script setup lang="ts">
-import { ref, onMounted, onBeforeUnmount } from "vue";
+<script>
+export default {
+  data() {
+    return {
+      isDropdownOpen: false,
+      currentYear: new Date().getFullYear(),
+      scrollTopButton: null, // Initially null, will be set in mounted()
+    };
+  },
+  methods: {
+    toggleDropdown() {
+      this.$nextTick(() => {
+        this.isDropdownOpen = !this.isDropdownOpen;
+      });
+    },
 
-const isDropdownOpen = ref(false);
-const currentYear = ref(new Date().getFullYear()); // Use ref here if you want it to be reactive
-
-function toggleDropdown() {
-  isDropdownOpen.value = !isDropdownOpen.value;
-}
-
-function closeDropdown() {
-  isDropdownOpen.value = false;
-}
-
-function handleClickOutside(event: MouseEvent) {
-  // Use 'as' for type assertion if needed
-  if (!(event.target as HTMLElement).closest(".dropdown")) {
-    closeDropdown();
-  }
-}
-
-onMounted(() => {
-  document.addEventListener("click", handleClickOutside);
-  document.addEventListener("scroll", handleScroll);
-});
-
-onBeforeUnmount(() => {
-  document.removeEventListener("click", handleClickOutside);
-  document.removeEventListener("scroll", handleScroll);
-});
-
-const scrollTopButton = ref<HTMLElement | null>(null);
-
-function handleScroll() {
-  if (window.scrollY > 0) {
-    if (scrollTopButton.value) {
-      scrollTopButton.value.classList.remove("invisible");
+    closeDropdown() {
+      this.isDropdownOpen = false;
+    },
+    handleClickOutside(event) {
+      if (!this.$el.contains(event.target)) {
+        this.closeDropdown();
+      }
+    },
+    scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    },
+    handleScroll() {
+      if (this.scrollTopButton) {
+        if (window.scrollY > 0) {
+          this.scrollTopButton.classList.remove("invisible");
+        } else {
+          this.scrollTopButton.classList.add("invisible");
+        }
+      }
+    },
+  },
+  mounted() {
+    // Added a null check after setting this.scrollTopButton
+    this.$nextTick(() => {
+      this.scrollTopButton = this.$refs.scrollTopButton;
+      if (this.scrollTopButton) {
+        document.addEventListener("scroll", this.handleScroll);
+      }
+    });
+    document.addEventListener("click", this.handleClickOutside);
+  },
+  unmounted() {
+    if (this.scrollTopButton) {
+      document.removeEventListener("scroll", this.handleScroll);
     }
-  } else {
-    if (scrollTopButton.value) {
-      scrollTopButton.value.classList.add("invisible");
-    }
-  }
-}
-
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: "smooth" });
-}
+    document.removeEventListener("click", this.handleClickOutside);
+  },
+};
 </script>
 
 <style scoped>
