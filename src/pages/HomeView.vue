@@ -10,7 +10,7 @@
             <a
               href="#"
               :class="
-                scrollPosition < 909
+                scrollPosition < 800
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
@@ -22,7 +22,7 @@
             <a
               href="#work"
               :class="
-                scrollPosition >= 909 && scrollPosition < 2469
+                scrollPosition >= 800 && scrollPosition < 2469
                   ? 'nav-dot selected-circle block w-7 h-7 rounded-full border-4 border-nav bg-body'
                   : 'nav-dot block w-7 h-7 rounded-full border-4 border-nav bg-body'
               ">
