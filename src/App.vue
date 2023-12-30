@@ -12,6 +12,11 @@
           <a href="#" class="text-selected-text">Home</a>
           <a href="#work">My work</a>
           <a href="#publications">Publications</a>
+          <a
+            href="https://drive.google.com/drive/folders/1uXpdj8ByXizMro42HuNAvkrWX4hiuyUi?usp=sharing"
+            target="_blank"
+            >CV</a
+          >
           <a href="#hire"
             ><button
               class="px-6 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
@@ -49,6 +54,14 @@
                   class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
                   href="#publications"
                   >Publications</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-white hover:bg-gray-700 hover:text-white focus:text-white focus:bg-gray-700"
+                  href="https://drive.google.com/drive/folders/1uXpdj8ByXizMro42HuNAvkrWX4hiuyUi?usp=sharing"
+                  target="_blank"
+                  >CV</a
                 >
               </li>
               <li>

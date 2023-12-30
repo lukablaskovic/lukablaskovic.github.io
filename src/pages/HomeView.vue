@@ -63,13 +63,13 @@
             class="font-bold text-selected-text text-xl mb-2 md:text-xl lg:text-2xl text-center md:text-left">
             Full Stack Developer<br />
           </h1>
-          <h2 class="text-4xl md:text-4xl lg:text-6xl text-center md:text-left">
+          <h2 class="text-5xl md:text-4xl lg:text-6xl text-center md:text-left">
             Luka<br />
             Blašković
           </h2>
           <div class="image-container ml-4 mt-2 block md:hidden">
             <img
-              class="rounded-full mx-auto w-1/2 -z-1 animate__animated animate__bounceIn"
+              class="rounded-full mx-auto w-3/4 md:w-1/2 -z-1 animate__animated animate__bounceIn"
               src="../assets/me_no_bg_colored.png"
               alt="Luka Blašković profile image" />
           </div>
@@ -85,9 +85,11 @@
             of those around me and contribute to the ever-evolving world of
             technology.
           </h3>
+          <BR></BR>
+
           <a href="#work" class="text-center md:text-left"
             ><button
-              class="px-6 mt-6 md:mt-12 py-2 bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
+              class="px-16 md:px-6 mt-6 md:mt-12 py-4 md:py-2 text-xl md:text-base font-bold rounded-lg bg-theme transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 hover:bg-selected-text duration-300">
               My work
             </button></a
           >
