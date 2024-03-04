@@ -72,11 +72,22 @@ import naiveBayesIMG from "../assets/work/naive-bayes.jpg";
 import solidityIMG from "../assets/work/solidity.jpg";
 import fipu_internshipIMG from "../assets/work/fipu-internship.png";
 import music_cnn_IMG from "../assets/work/audio.jpg";
+import educoder_IMG from "../assets/work/educoder.jpg";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+
+      {
+          title: "Edu Coder",
+          imgSRC: educoder_IMG,
+          webSRC: "",
+          description:
+            "Web app designed to facilitate the evaluation of student coding skills through exams",
+
+          buildSRC: "https://fipu-educoder.netlify.app/",
+        },
         {
           title: "UNIPU Certify",
           imgSRC: solidityIMG,
