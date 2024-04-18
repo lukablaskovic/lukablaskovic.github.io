@@ -73,18 +73,26 @@ import solidityIMG from "../assets/work/solidity.jpg";
 import fipu_internshipIMG from "../assets/work/fipu-internship.png";
 import music_cnn_IMG from "../assets/work/audio.jpg";
 import educoder_IMG from "../assets/work/educoder.jpg";
+import CASE_IMG from "../assets/work/coding.webp";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
-
-      {
+        {
+          title: "CASE",
+          imgSRC: CASE_IMG,
+          webSRC: "https://github.com/lukablaskovic/CASE",
+          description:
+            "Coding Assessment & Scoring Engine - Typer app for evaluating student student coding exams using GPT4",
+          buildSRC: "",
+        },
+        {
           title: "Edu Coder",
           imgSRC: educoder_IMG,
           webSRC: "",
           description:
-            "Web app designed to facilitate the evaluation of student coding skills through exams",
+            "Web app designed to facilitate the evaluation of student coding skills through exams 🧑🏻‍🎓",
 
           buildSRC: "https://fipu-educoder.netlify.app/",
         },
@@ -213,7 +221,7 @@ export default {
           webSRC: "https://github.com/lukablaskovic/skamp.hr",
           description: "Website for Škamp Ltd company- developed using Vue.js",
 
-          buildSRC: "https://skamp.hr/",
+          buildSRC: "",
         },
 
         {
@@ -244,6 +252,7 @@ export default {
 
           buildSRC: "",
         },
+        /*
         {
           title: "COVID-19 patients Flask App",
           imgSRC: covidIMG,
@@ -253,6 +262,7 @@ export default {
 
           buildSRC: "",
         },
+        */
       ],
     };
   },
