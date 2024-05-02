@@ -96,7 +96,7 @@
               href="https://www.youtube.com/channel/UCV97FD-sSiA_J97Z_QxWfPA"
               target="_blank"
               data-aos="flip-left"
-              data-aos-delay="800">
+              data-aos-delay="1000">
               <i
                 class="fa-brands fa-youtube fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
