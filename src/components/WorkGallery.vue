@@ -55,7 +55,6 @@
 </template>
 <script>
 import gameLauncherIMG from "../assets/work/launcher.png";
-import skampIMG from "../assets/work/skamp.hr.png";
 import istramusicshopIMG from "../assets/work/istramusicshop.png";
 import macroquiet_frontendIMG from "../assets/work/macroquiet_frontend.png";
 import macroquietLogoIMG from "../assets/work/macroquiet_logo.png";
@@ -212,14 +211,6 @@ export default {
           webSRC: "https://github.com/lukablaskovic/reverse-image-search",
           description:
             "Image similarity search App developed using Milvus.io and Towhee.io. Undergraduate thesis",
-
-          buildSRC: "",
-        },
-        {
-          title: "Skamp.hr Website",
-          imgSRC: skampIMG,
-          webSRC: "https://github.com/lukablaskovic/skamp.hr",
-          description: "Website for Škamp Ltd company- developed using Vue.js",
 
           buildSRC: "",
         },
