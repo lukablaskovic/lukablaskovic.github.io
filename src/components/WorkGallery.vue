@@ -73,11 +73,20 @@ import fipu_internshipIMG from "../assets/work/fipu-internship.png";
 import music_cnn_IMG from "../assets/work/audio.jpg";
 import educoder_IMG from "../assets/work/educoder.jpg";
 import CASE_IMG from "../assets/work/coding.webp";
+import Edubot_IMG from "../assets/work/edubot.png";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "EduBot",
+          imgSRC: Edubot_IMG,
+          webSRC: "https://github.com/lukablaskovic/edu_bot",
+          description:
+            "EduBot is a powerful RAG (Retrieval-Augmented Generation) chatbot that utilizes the latest SOTA models to provide a seamless and interactive learning experience.\n| Master's thesis project",
+          buildSRC: "",
+        },
         {
           title: "CASE",
           imgSRC: CASE_IMG,
