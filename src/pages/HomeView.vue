@@ -70,13 +70,21 @@
           <div class="image-container ml-4 mt-2 block md:hidden">
             <img
               class="rounded-full mx-auto w-3/4 md:w-1/2 -z-1 animate__animated animate__bounceIn"
-              src="../assets/me_no_bg_colored.png"
+              src="../assets/me_no_bg2024.png"
               alt="Luka Blašković profile image" />
           </div>
           <h3 class="mb-4 mt-8 md:mt-4 text-center md:text-left">
-            I am a Full Stack Developer and IT enthusiast based in Croatia,
-            currently pursuing a Master's degree in Informatics at Juraj Dobrila
-            University of Pula.
+            I am a Full Stack Developer and IT enthusiast based in Croatia. I
+            graduated from the
+            <a
+              class="italic"
+              href="https://fipu.unipu.hr/fipu/en"
+              target="_blank"
+              >Faculty of Informatics in Pula</a
+            >
+            and currently work there on the EDIH Adria project, which helps
+            enterprises integrate modern technology, train personnel, identify
+            finance options, and connect with key regional and European actors.
           </h3>
 
           <h3 class="text-center md:text-left">
@@ -97,7 +105,7 @@
         <div class="image-container hidden md:block">
           <img
             class="rounded-full mx-auto md:w-3/4 2xl:w-3/4 md:ml-48 md:mt-0 -z-1 animate__animated animate__bounceIn"
-            src="../assets/me_no_bg_colored.png"
+            src="../assets/me_no_bg2024.png"
             alt="Luka Blašković profile image" />
         </div>
       </div>
