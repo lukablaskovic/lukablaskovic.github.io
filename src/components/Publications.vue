@@ -1,6 +1,7 @@
 <template>
   <div
-    class="px-6 md:container mt-24 lg:mt-48 flex justify-center items-center mx-auto md:px-14 lg:px-12 w-full">
+    class="px-6 md:container mt-24 lg:mt-48 flex justify-center items-center mx-auto md:px-14 lg:px-12 w-full"
+  >
     <section>
       <h2 id="publications" class="secondary-title mb-6">Publications</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -9,7 +10,8 @@
           v-for="pub in publications"
           :key="pub.title"
           data-aos="fade-right"
-          data-aos-delay="400">
+          data-aos-delay="400"
+        >
           <div class="card-body p-4 text-center md:text-left">
             <a
               :href="pub.link"
@@ -20,10 +22,12 @@
             <a
               :href="pub.link"
               target="_blank"
-              class="inline-flex text-sm md:text-base items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150">
+              class="inline-flex text-sm md:text-base items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150"
+            >
               <component
                 :is="pub.icon"
-                class="inline h-6 w-6 text-white mr-2" />
+                class="inline h-6 w-6 text-white mr-2"
+              />
               <span>{{ pub.journal }}</span>
             </a>
             <p class="text-gray-700 text-sm text-justify">{{ pub.desc }}</p>
@@ -47,6 +51,15 @@ export default {
       isExtended: false,
 
       publications: [
+        {
+          title:
+            "Implementation of a conversational agent for the personalization of teaching materials using language models",
+          desc: "Generative AI, specifically large language models (LLMs), is revolutionizing education by personalizing interactions and enhancing reasoning capabilities. However, LLMs can produce misinformation due to their inherent limitations. To address this, the paper introduces EduBot, a conversational agent utilizing Retrieval Augmented Generation (RAG) to improve accuracy by accessing external data. Evaluated through manual analysis and metrics like FAITH and ANS_REL, EduBot and commercial models like GPT-4 showed improved response accuracy and relevance, highlighting the potential of advanced NLP in education.",
+          journal: "Master's thesis",
+          link: "https://repozitorij.unipu.hr/islandora/object/unipu:9219",
+          icon: AcademicCapIcon,
+        },
+
         {
           title:
             "Evaluating a Conceptual Model for Measuring Gaming Experience: A Case Study of Stranded Away Platformer Game",
