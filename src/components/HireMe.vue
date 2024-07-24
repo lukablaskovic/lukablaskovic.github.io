@@ -2,7 +2,7 @@
   <div
     class="px-6 md:container mt-24 lg:mt-48 flex justify-between items-center mx-auto md:px-14 lg:px-24 w-full">
     <section class="w-full">
-      <h2 id="hire" class="secondary-title">Hire me</h2>
+      <h2 id="hire" class="secondary-title">Contact me</h2>
       <p class="section-paragraph">
         Feel free to to contact me any time, through any method below.
       </p>
