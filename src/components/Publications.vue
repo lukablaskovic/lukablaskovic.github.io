@@ -1,7 +1,6 @@
 <template>
   <div
-    class="px-6 md:container mt-24 lg:mt-48 flex justify-center items-center mx-auto md:px-14 lg:px-12 w-full"
-  >
+    class="px-6 md:container mt-24 lg:mt-48 flex justify-center items-center mx-auto md:px-14 lg:px-12 w-full">
     <section>
       <h2 id="publications" class="secondary-title mb-6">Publications</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
@@ -10,8 +9,7 @@
           v-for="pub in publications"
           :key="pub.title"
           data-aos="fade-right"
-          data-aos-delay="400"
-        >
+          data-aos-delay="400">
           <div class="card-body p-4 text-center md:text-left">
             <a
               :href="pub.link"
@@ -22,12 +20,10 @@
             <a
               :href="pub.link"
               target="_blank"
-              class="inline-flex text-sm md:text-base items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150"
-            >
+              class="inline-flex text-sm md:text-base items-center mb-3 bg-selected-text hover:bg-theme text-white font-semibold py-2 px-3 rounded transition ease-in-out duration-150">
               <component
                 :is="pub.icon"
-                class="inline h-6 w-6 text-white mr-2"
-              />
+                class="inline h-6 w-6 text-white mr-2" />
               <span>{{ pub.journal }}</span>
             </a>
             <p class="text-gray-700 text-sm text-justify">{{ pub.desc }}</p>
@@ -58,6 +54,15 @@ export default {
           journal: "Master's thesis",
           link: "https://repozitorij.unipu.hr/islandora/object/unipu:9219",
           icon: AcademicCapIcon,
+        },
+
+        {
+          title:
+            "Exploring CNNs and Mel Spectrograms for Music Genre Classification: Augmentation Strategies and Fine-Tuning",
+          desc: "Sound, a multi-dimensional signal, is increasingly used in deep learning applications like recommendation systems and text-to-speech. Music analysis benefits from Mel spectrograms, which align with human auditory perception. This study enhances a CNN model for music genre classification using Mel spectrograms, expanding the GTZAN dataset with data augmentation. Converting images to grayscale improved training speed and accuracy. Fine-tuning and transfer learning, particularly with MobileNet, achieved an 80.13% accuracy on an independent Spotify test dataset, highlighting the method's robustness.",
+          journal: "Preprint",
+          link: "src/assets/musicCNN24.pdf",
+          icon: NewspaperIcon,
         },
 
         {
