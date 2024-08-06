@@ -1,7 +1,7 @@
 # Luka Blašković
 Hi! 👋🏻  
 
-I am a Full Stack Developer and IT enthusiast based in Croatia, currently pursuing a Master's degree in Informatics at Juraj Dobrila University of Pula.  
+I am a Full Stack Developer and IT enthusiast based in Croatia.
 With a strong passion for creating exceptional software, I am committed to utilizing my expertise to positively impact the lives of those around me and contribute to the ever-evolving world of technology.  
 
 I am the founder and main developer of [Macroquiet Game Development Studio](https://macroquiet.com/), where we are fervent about creating captivating gaming experiences. The studio encapsulates my deep-seated passion for game development and encapsulates my lifelong commitment to innovation in technology.
