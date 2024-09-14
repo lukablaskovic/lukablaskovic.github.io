@@ -74,11 +74,20 @@ import music_cnn_IMG from "../assets/work/audio.jpg";
 import educoder_IMG from "../assets/work/educoder.jpg";
 import CASE_IMG from "../assets/work/coding.webp";
 import Edubot_IMG from "../assets/work/edubot.png";
+import FIPULAB_IMG from "../assets/work/FIPU_LAB_WEB.png";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "FIPU Lab Website",
+          imgSRC: FIPULAB_IMG,
+          webSRC: "https://github.com/lukablaskovic/edu_bot",
+          description:
+            "FIPU Lab is a research and development center for AI and ML projects at the Faculty of Informatics in Pula, Croatia.",
+          buildSRC: "https://goreski.github.io/FIPULabWeb/",
+        },
         {
           title: "EduBot",
           imgSRC: Edubot_IMG,
@@ -129,7 +138,7 @@ export default {
           description:
             "Complete system for handling faculty internships, for students, companies and professors -> Python | Baserow.io | FastAPI | PostrgreSQL | Vue.js",
 
-          buildSRC: "http://fipubot.unipu.hr:4000/",
+          buildSRC: "https://fipu-praksa.unipu.hr/",
         },
         {
           title: "AquaPod FastAPI Backend",
