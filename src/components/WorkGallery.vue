@@ -83,7 +83,7 @@ export default {
         {
           title: "FIPU Lab Website",
           imgSRC: FIPULAB_IMG,
-          webSRC: "https://github.com/lukablaskovic/edu_bot",
+          webSRC: "",
           description:
             "FIPU Lab is a research and development center for AI and ML projects at the Faculty of Informatics in Pula, Croatia.",
           buildSRC: "https://goreski.github.io/FIPULabWeb/",

@@ -45,11 +45,11 @@
           <!-- Contact info -->
 
           <a
-            href="mailto:lukablaskovic2000@gmail.com"
+            href="mailto:luka.blaskovic@unipu.hr"
             class="text-secondary hover:text-white underline mt-3 block"
             data-aos="fade-down"
             data-aos-delay="1600">
-            lukablaskovic2000@gmail.com</a
+            luka.blaskovic@unipu.hr</a
           >
 
           <!-- Socials -->

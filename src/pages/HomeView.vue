@@ -74,17 +74,18 @@
               alt="Luka Blašković profile image" />
           </div>
           <h3 class="mb-4 mt-8 md:mt-4 text-center md:text-left">
-            I am a Full Stack Developer and IT enthusiast based in Croatia. I
-            graduated from the
+            I am a Full Stack Developer and PhD student at the
+            <a class="italic" href="https://www.inf.uniri.hr/" target="_blank"
+              >Faculty of Informatics and Digital Technologies in Rijeka</a
+            >
+            as well as a student assistant at the
             <a
               class="italic"
-              href="https://fipu.unipu.hr/fipu/en"
+              href="https://fipu.unipu.hr/fipu/luka.blaskovic"
               target="_blank"
-              >Faculty of Informatics in Pula</a
+              >Faculty of Informatics in Pula,</a
             >
-            and currently work there on the EDIH Adria project, which helps
-            enterprises integrate modern technology, train personnel, identify
-            finance options, and connect with key regional and European actors.
+            where I teach various programming courses.
           </h3>
 
           <h3 class="text-center md:text-left">
