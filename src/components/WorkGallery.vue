@@ -75,11 +75,20 @@ import educoder_IMG from "../assets/work/educoder.jpg";
 import CASE_IMG from "../assets/work/coding.webp";
 import Edubot_IMG from "../assets/work/edubot.png";
 import FIPULAB_IMG from "../assets/work/FIPU_LAB_WEB.png";
+import SKAMP_IMG from "../assets/work/skamp.png";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "Škamp d.o.o.",
+          imgSRC: SKAMP_IMG,
+          webSRC: "",
+          description:
+            "Škamp d.o.o - Dizajn i izrada weba, marketing, Google Ads",
+          buildSRC: "https://skamp.hr/",
+        },
         {
           title: "FIPU Lab Website",
           imgSRC: FIPULAB_IMG,

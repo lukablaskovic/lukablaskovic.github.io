@@ -82,15 +82,7 @@
               <i
                 class="fa-brands fa-researchgate fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
             </a>
-            <!--Discord-->
-            <a
-              href="https://discordapp.com/users/355000513034715146"
-              target="_blank"
-              data-aos="flip-left"
-              data-aos-delay="800">
-              <i
-                class="fa-brands fa-discord fa-3x transition ease-in-out delay-15 hover:-translate-y-1 hover:scale-110 duration-300"></i>
-            </a>
+
             <!--Youtube-->
             <a
               href="https://www.youtube.com/channel/UCV97FD-sSiA_J97Z_QxWfPA"
