@@ -82,14 +82,6 @@ export default {
     return {
       portfolio: [
         {
-          title: "Škamp d.o.o.",
-          imgSRC: SKAMP_IMG,
-          webSRC: "",
-          description:
-            "Škamp d.o.o - Dizajn i izrada weba, marketing, Google Ads",
-          buildSRC: "https://skamp.hr/",
-        },
-        {
           title: "FIPU Lab Website",
           imgSRC: FIPULAB_IMG,
           webSRC: "",
@@ -250,15 +242,6 @@ export default {
             "Mobile application for the sale of musical instruments - developed using Vue.js",
 
           buildSRC: "https://istramusicshop.netlify.app/",
-        },
-
-        {
-          title: "Eurolim.hr Website",
-          imgSRC: eurolimIMG,
-          webSRC: "",
-          description: "Website for Eurolim Ltd shop - Wordpress",
-          buildAvailable: true,
-          buildSRC: "https://eurolim.hr/wp/",
         },
 
         {
