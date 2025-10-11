@@ -49,6 +49,15 @@ export default {
       publications: [
         {
           title:
+            "Robust Clinical Querying with Local LLMs: Lexical Challenges in NL2SQL and Retrieval-Augmented QA on EHRs",
+          desc: "EHR querying is challenging for nontechnical users, especially under privacy constraints. We evaluate NL2SQL for structured querying and RAG-QA for clinical question answering across nine large language models, covering both open-weight and proprietary options. Results show that RAG-QA maintains strong semantic fidelity, while NL2SQL struggles with lexical and ontology mismatches; error analysis highlights grounding issues as the main bottleneck and points toward schema-aware methods for improvement.",
+          journal: "MDPI - BDCC",
+          link: "https://www.mdpi.com/2504-2289/9/10/256",
+          icon: NewspaperIcon,
+        },
+
+        {
+          title:
             "Implementation of a conversational agent for the personalization of teaching materials using language models",
           desc: "Generative AI, specifically large language models (LLMs), is revolutionizing education by personalizing interactions and enhancing reasoning capabilities. However, LLMs can produce misinformation due to their inherent limitations. To address this, the paper introduces EduBot, a conversational agent utilizing Retrieval Augmented Generation (RAG) to improve accuracy by accessing external data. Evaluated through manual analysis and metrics like FAITH and ANS_REL, EduBot and commercial models like GPT-4 showed improved response accuracy and relevance, highlighting the potential of advanced NLP in education.",
           journal: "Master's thesis",
