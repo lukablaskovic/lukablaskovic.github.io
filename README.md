@@ -7,5 +7,4 @@ With a strong passion for creating great software, I am committed to utilizing m
 Feel free to reach out if you have any inquiries, project ideas, or just want to say hello! You can contact me through the following:  
 <div align="center">
 <a href="https://www.linkedin.com/in/luka-bla%C5%A1kovi%C4%87-575087231/"><img align="center" alt="Luka | LinkedIn" width="64px" src="https://cdn-icons-png.flaticon.com/512/174/174857.png" /></a>
-<a href="https://discordapp.com/users/355000513034715146"><img align="center" alt="Luka | Discord" width="64px" src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" /></a>
 </div>
