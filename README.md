@@ -2,9 +2,7 @@
 Hi! 👋🏻  
 
 I am a Full Stack Developer and IT enthusiast based in Croatia.
-With a strong passion for creating exceptional software, I am committed to utilizing my expertise to positively impact the lives of those around me and contribute to the ever-evolving world of technology.  
-
-I am the founder and main developer of [Macroquiet Game Development Studio](https://macroquiet.com/), where we are fervent about creating captivating gaming experiences. The studio encapsulates my deep-seated passion for game development and encapsulates my lifelong commitment to innovation in technology.
+With a strong passion for creating great software, I am committed to utilizing my expertise to positively impact the lives of those around me and contribute to the ever-evolving world of technology.   
 
 Feel free to reach out if you have any inquiries, project ideas, or just want to say hello! You can contact me through the following:  
 <div align="center">
