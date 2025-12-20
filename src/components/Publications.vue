@@ -49,6 +49,15 @@ export default {
       publications: [
         {
           title:
+            "Tool-Augmented Disambiguation LLM Agent Utilizing UMLS for Biomedical Entity Linking",
+          desc: "The paper introduces a tool-augmented LLM agent for biomedical entity linking that leverages UMLS ontology structure through coordinated lexical, semantic, and relational tools to perform self-directed concept disambiguation. Evaluated on MedMentions ST21pv, the approach achieves substantially higher top-1 CUI accuracy than existing lexical, neural, and direct LLM methods, demonstrating the effectiveness of ontology-grounded, agentic reasoning for scalable and interpretable BEL.",
+          journal: "ICAART2026",
+          link: "https://icaart.scitevents.org/",
+          icon: NewspaperIcon,
+        },
+
+        {
+          title:
             "Robust Clinical Querying with Local LLMs: Lexical Challenges in NL2SQL and Retrieval-Augmented QA on EHRs",
           desc: "EHR querying is challenging for nontechnical users, especially under privacy constraints. We evaluate NL2SQL for structured querying and RAG-QA for clinical question answering across nine large language models, covering both open-weight and proprietary options. Results show that RAG-QA maintains strong semantic fidelity, while NL2SQL struggles with lexical and ontology mismatches; error analysis highlights grounding issues as the main bottleneck and points toward schema-aware methods for improvement.",
           journal: "MDPI - BDCC",
