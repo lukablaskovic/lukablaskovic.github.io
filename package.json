@@ -8,8 +8,8 @@
     "dev": "vite",
     "build": "vue-tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "vue-tsc && npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist --branch gh-pages --nojekyll --cname www.lukablaskovic.me"
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
