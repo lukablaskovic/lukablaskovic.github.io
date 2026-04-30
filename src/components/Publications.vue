@@ -52,7 +52,7 @@ export default {
             "Tool-Augmented Disambiguation LLM Agent Utilizing UMLS for Biomedical Entity Linking",
           desc: "The paper introduces a tool-augmented LLM agent for biomedical entity linking that leverages UMLS ontology structure through coordinated lexical, semantic, and relational tools to perform self-directed concept disambiguation. Evaluated on MedMentions ST21pv, the approach achieves substantially higher top-1 CUI accuracy than existing lexical, neural, and direct LLM methods, demonstrating the effectiveness of ontology-grounded, agentic reasoning for scalable and interpretable BEL.",
           journal: "ICAART2026",
-          link: "https://icaart.scitevents.org/",
+          link: "https://www.scitepress.org/Link.aspx?doi=10.5220/0014355600004052",
           icon: NewspaperIcon,
         },
 

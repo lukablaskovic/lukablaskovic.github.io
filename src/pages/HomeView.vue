@@ -74,11 +74,17 @@
               alt="Luka Blašković profile image" />
           </div>
           <h3 class="mb-4 mt-8 md:mt-4 text-center md:text-left">
-            I am a Full Stack Developer and PhD student at the
+            I am a Software Developer at
+            <a
+              class="italic"
+              href="https://www.linkedin.com/company/festina-technology/posts/"
+              >Festina.AI</a
+            >
+            , PhD student at the
             <a class="italic" href="https://www.inf.uniri.hr/" target="_blank"
               >Faculty of Informatics and Digital Technologies in Rijeka</a
             >
-            as well as a student assistant at the
+            , and a student assistant at the
             <a
               class="italic"
               href="https://fipu.unipu.hr/fipu/luka.blaskovic"
@@ -94,7 +100,7 @@
             of those around me and contribute to the ever-evolving world of
             technology.
           </h3>
-          <BR></BR>
+          <br />
 
           <a href="#work" class="text-center md:text-left"
             ><button

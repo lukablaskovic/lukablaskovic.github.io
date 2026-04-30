@@ -75,12 +75,20 @@ import educoder_IMG from "../assets/work/educoder.jpg";
 import CASE_IMG from "../assets/work/coding.webp";
 import Edubot_IMG from "../assets/work/edubot.png";
 import FIPULAB_IMG from "../assets/work/FIPU_LAB_WEB.png";
-import SKAMP_IMG from "../assets/work/skamp.png";
+import FIPU_GAME_IMG from "../assets/work/fipu-game.png";
 export default {
   name: "work-gallery",
   data() {
     return {
       portfolio: [
+        {
+          title: "FIPU Games",
+          imgSRC: FIPU_GAME_IMG,
+          webSRC: "https://github.com/lukablaskovic/fipu-game",
+          description:
+            "Mobile-first promotional browser game for the Faculty of Informatics in Pula.",
+          buildSRC: "https://fipu-game--fipu-game.europe-west4.hosted.app/",
+        },
         {
           title: "FIPU Lab Website",
           imgSRC: FIPULAB_IMG,
